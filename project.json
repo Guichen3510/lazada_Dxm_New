@@ -1,0 +1,82 @@
+{
+  "name": "Edge-店小秘批量自动_Windows",
+  "description": "本流程已经优化至新视觉设计版本：\r\n注意：1.标题需要翻译时需启用使用Edge:有道翻译，其他用途期间需要禁用；\r\n2.不需要写入英文标题时需要禁用“输入英文标题”，否则启用。",
+  "main": "店小秘批量自动化-状态机.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.2]",
+    "UiPath.System.Activities": "[22.4.4]",
+    "UiPath.UIAutomation.Activities": "[22.4.7]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.4.0",
+  "projectVersion": "1.0.4",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\店小秘批量自动化 模板.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "d99bdf96-49f1-416d-9f06-8e822acfb809",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "ocr试验.xaml",
+      "uniqueId": "519794a0-65f7-412e-8274-784c06d21daf",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "店小秘批量自动化(翻译版).xaml",
+      "uniqueId": "c558996e-d374-4051-a016-ea088c47182e",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "店小秘批量自动化-状态机.xaml",
+      "uniqueId": "eb24bed5-0a1e-4bad-a6dd-72330c245ba0",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
