@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="店小秘抓取URL" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1297,2972" sap2010:WorkflowViewState.IdRef="店小秘抓取URL_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="店小秘抓取URL" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1178,3026" sap2010:WorkflowViewState.IdRef="店小秘抓取URL_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="37">
+    <scg:List x:TypeArguments="x:String" Capacity="74">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -38,10 +38,12 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="56">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -72,7 +74,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="店小秘-1688产品信息抓取" sap:VirtualizedContainerService.HintSize="477,2907" sap2010:WorkflowViewState.IdRef="Sequence_12">
+  <Sequence DisplayName="店小秘-1688产品信息抓取" sap:VirtualizedContainerService.HintSize="517,2961" sap2010:WorkflowViewState.IdRef="Sequence_12">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -81,13 +83,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="使用应用程序/浏览器" sap:VirtualizedContainerService.HintSize="435,2815" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2cb72885-967a-4348-a179-b981418a76ec" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="使用应用程序/浏览器" sap:VirtualizedContainerService.HintSize="455,2850" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2cb72885-967a-4348-a179-b981418a76ec" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="401,2597" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="421,2631" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="text" />
               <Variable x:TypeArguments="x:String" Name="date1" />
@@ -98,22 +100,22 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="输入搜索内容" sap:VirtualizedContainerService.HintSize="359,246" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="搜索内容:" Title="请输入搜索内容">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="输入搜索内容" sap:VirtualizedContainerService.HintSize="359,247" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="搜索内容:" Title="请输入搜索内容">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[text]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="输入开始时间" sap:VirtualizedContainerService.HintSize="359,246" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="搜索开始时间:" Title="请输入搜索开始时间：****-**-**">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="输入开始时间" sap:VirtualizedContainerService.HintSize="359,247" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="搜索开始时间:" Title="请输入搜索开始时间：****-**-**">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[date1]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="输入结束" sap:VirtualizedContainerService.HintSize="359,246" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="搜索结束时间:" Title="请输入搜索结束时间：****-**-**">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="输入结束" sap:VirtualizedContainerService.HintSize="359,247" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="搜索结束时间:" Title="请输入搜索结束时间：****-**-**">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[date2]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="选择页面显示条数" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="300条">
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="选择页面显示条数" sap:VirtualizedContainerService.HintSize="359,135" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="300条">
               <ui:SelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="4">
                   <x:String>50条</x:String>
@@ -129,7 +131,7 @@
                 </ui:Target>
               </ui:SelectItem.Target>
             </ui:SelectItem>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="单击 筛选" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="单击 筛选" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
               </ui:Click.CursorPosition>
@@ -141,7 +143,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="输入 搜索内容" EmptyField="False" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="True" Text="[text]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="输入 搜索内容" EmptyField="False" sap:VirtualizedContainerService.HintSize="359,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="True" Text="[text]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6c787e31-9642-434b-9278-d606ca06c39d" InformativeScreenshot="79a0a99d4814c27d93379808733a81b5" Selector="&lt;webctrl parentid='searchCategory' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -150,7 +152,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="单击 搜索" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="单击 搜索" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
               </ui:Click.CursorPosition>
@@ -162,7 +164,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="单击 自定义" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="单击 自定义" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
               </ui:Click.CursorPosition>
@@ -174,7 +176,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="输入开始时间" EmptyField="False" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="True" Text="[date1]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="输入开始时间" EmptyField="False" sap:VirtualizedContainerService.HintSize="359,135" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="True" Text="[date1]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6ed83374-1a0c-4092-ac48-7ff39fd4315a" InformativeScreenshot="f0df53edde019001da76c8a0e17489a8" Selector="&lt;webctrl id='customsTimeBegin' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -183,7 +185,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="输入结束时间" EmptyField="False" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="True" Text="[date2]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="输入结束时间" EmptyField="False" sap:VirtualizedContainerService.HintSize="359,135" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="True" Text="[date2]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="71212e20-eda3-4bf2-b852-d1b2ae23b223" InformativeScreenshot="b05aeba23320bf71b2dffcf5e7aec24c" Selector="&lt;webctrl id='customsTimeEnd' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -192,20 +194,20 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <uix:NClick ClickType="Single" DisplayName="单击 '确定'" sap:VirtualizedContainerService.HintSize="359,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2cb72885-967a-4348-a179-b981418a76ec" Version="V1">
+            <uix:NClick ClickType="Single" DisplayName="单击 '确定'" sap:VirtualizedContainerService.HintSize="359,159" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2cb72885-967a-4348-a179-b981418a76ec" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/crawl/index.htm" DesignTimeRectangle="1060, 385, 78, 32" ElementType="Button" FriendlyName="'确定'" FullSelectorArgument="&lt;webctrl id='queryCustomTimeBtn' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='queryCustomTimeBtn' tag='BUTTON' type='button' class='button btn-determine' aaname='　确定　' check:innerText='确定' /&gt;" Guid="44901952-7fad-446c-b1d7-9b3e496c73e2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAkCAYAAAAaV21HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHHSURBVGhD7ZpBSsNAGIW9k2vv4xkEwQt4Aj2BKxFEcOFeRbCrbioo1kVBrUWCWpWRF/vCME6bpn+SqfR98Mik+Zs2X/5kssiaE7UgkTVRiDy66ruNnVO3vnWizBG4gjNSiJTE6oEzUoiMFSrlIRJpDJFIY4hEGkMk0hgikcYQiTSGLI3IvbOe6z9lbnP/Iro9zHnv0d0MXqPb2gxpXSQE+AxGb273uOuy98/JJ7+Mv75zubF9INsHnfw7h5f30e1thSTryO7DKBeFDkQn+tLQab4gSpuHshNQd0gSkRBzffucjyHtJRtP/sVfIBT1qCu77GMnpemQJCIhh+BSxzrvd1wPx8sa0rpIdA3ui5TE5TRYUwXUx367iZBkk00ocpGODO+lKUJaFYluxMFjoglFYomaWSL9OmRlRTKQQUkcT8MXFYrDeghuG2WTUp0hyUSSzt0wP3gKouBwjJkYjzaQx/2oIyddiDEEDbOP/BGH20KRnKAonV238iL9hDIgD8LQfXy4Rg3Fs2YWftc2HZJc5H8PkUhjiEQaQyTSGCKRxhCJNIZIpDFEIo0hEmkMKUTqJarqib5Epdf6qgWuoq/1CRsSWQvO/QAOrlXcTBzTLAAAAABJRU5ErkJggg==" InformativeScreenshot="a04c7b5576e93cb610193e659a755097.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--数据采集' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="提取表格数据" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='标题'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='产品来源'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='产品 Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text' name2='Column2' attr2='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='span' text='来源：' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="359,158" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="2cb72885-967a-4348-a179-b981418a76ec" Version="V1">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="提取表格数据" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='标题'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='产品来源'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='产品 Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='短描述'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text' name2='Column2' attr2='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='span' text='来源：' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="359,159" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="2cb72885-967a-4348-a179-b981418a76ec" Version="V1">
               <uix:NExtractData.NextLink>
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/crawl/index.htm" DesignTimeRectangle="1448, 588, 26, 28" ElementType="Text" FriendlyName="'&gt;'" FullSelectorArgument="&lt;webctrl aaname='&amp;gt;' parentid='upPage' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='&amp;gt;' parentid='upPage' tag='A' type='' class='' check:innerText='&amp;gt;' /&gt;" Guid="a95bd04c-a1de-4197-81b6-71a0977bee4f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB7SURBVFhHY/g/QGDgLL579+7/gcBwH4M47969oxkGmY8MRi2mGR61eNRimmEKLH74f9mMU/+7jmOTI4wp9DHEcqdu0h1AocUwTLoDqGQxDBMf/EPVxwMSx8QHKzZMoY/Jx6MWj1pMMzxq8Qi0GCQwEBjuY3qDAbL4/38Aqts/zwYd8KoAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--数据采集' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NExtractData.NextLink>
               <uix:NExtractData.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/crawl/index.htm" DesignTimeRectangle="239, 668, 1472, 5000" FriendlyName="'找货源1688淘宝 来源：1688'" FullSelectorArgument="&lt;webctrl parentid='pageList' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="8f640195-2166-42a0-90f2-4c9d747fbc62" InformativeScreenshot="82ffde284042bdbcacb932c64330c791.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--数据采集' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                <uix:TargetAnchorable DesignTimeRectangle="239, 732, 1472, 30000" FriendlyName="'找货源1688淘宝 来源：1688'" FullSelectorArgument="&lt;webctrl parentid='pageList' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="40beabca-6559-40d4-a714-c0c14f55a573" InformativeScreenshot="82ffde284042bdbcacb932c64330c791.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--数据采集' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="写入范围" sap:VirtualizedContainerService.HintSize="359,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\CG\Desktop\店小秘-1688店铺-产品URL抓取.xlsx">
+            <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="写入范围" sap:VirtualizedContainerService.HintSize="359,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\CG\Desktop\店小秘-1688店铺-产品URL抓取.xlsx">
               <ui:WriteRange.StartingCell>
                 <InArgument x:TypeArguments="x:String">
                   <Literal x:TypeArguments="x:String" Value="" />
