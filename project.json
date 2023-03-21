@@ -3,10 +3,12 @@
   "description": "本流程已经优化至新视觉设计版本：\r\n注意：1.标题需要翻译时需启用使用Edge:有道翻译，其他用途期间需要禁用；\r\n2.不需要写入英文标题时需要禁用“输入英文标题”，否则启用。",
   "main": "Main 店小秘批量自动化-状态机.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.12.3]",
-    "UiPath.Mail.Activities": "[1.15.2]",
-    "UiPath.System.Activities": "[22.4.4]",
-    "UiPath.UIAutomation.Activities": "[22.4.7]"
+    "UiPath.Excel.Activities": "[2.16.2]",
+    "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.Python.Activities": "[1.6.0]",
+    "UiPath.System.Activities": "[22.10.4]",
+    "UiPath.UIAutomation.Activities": "[22.10.5]",
+    "UiPath.WebAPI.Activities": "[1.13.3]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -20,6 +22,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -83,6 +86,12 @@
     {
       "filePath": "Main 店小秘批量自动化-状态机.xaml",
       "uniqueId": "c7dc559f-6d02-4c3b-b35a-0f388f28e15a",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "遍历元素界面.xaml",
+      "uniqueId": "9f181bba-0b42-455b-8d4d-bca03d78ec3a",
       "input": [],
       "output": []
     }
