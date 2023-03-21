@@ -1,0 +1,359 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="遍历元素界面" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,2612" sap2010:WorkflowViewState.IdRef="遍历元素界面_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="49">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="770,2547" sap2010:WorkflowViewState.IdRef="Sequence_52">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="708,2152" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" ScopeGuid="24062a39-cdc1-4e23-a8dc-2d0740c05718" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="674,1933" sap2010:WorkflowViewState.IdRef="Sequence_58">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NForEachUiElement DisplayName="遍历用户界面元素 Size" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='当前元素'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='CurrentLabel_1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='CurrentLabel_2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='span' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='span' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='span' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='label' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='span' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="612,1818" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="24062a39-cdc1-4e23-a8dc-2d0740c05718" Version="V3">
+              <uix:NForEachUiElement.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="548,1549" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="Label" />
+                      <Variable x:TypeArguments="ui:UiElement" Name="CUI" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="486,84" sap2010:WorkflowViewState.IdRef="Assign_16">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Label]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentLabel_1.Replace("*","").Replace("/","").Replace("~","").Replace("&lt;","").Replace("&gt;","").Replace("/","")]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="486,96" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[Label]" />
+                    <uix:NClick ClickType="Single" DisplayName="单击" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="NClick_25" InUiElement="[当前元素]" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                    <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="486,297" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="查找元素 'INPUT'" FoundElement="[CUI]" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                            <ui:WaitUiElementAppear.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="83410a13-ad4a-4b0a-b940-93034810ad06" InformativeScreenshot="dc8de2d414e51193b87916c750b618bc" Selector="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;input' tag='INPUT' parentid='skuParameterList' idx='*' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:WaitUiElementAppear.Target>
+                          </ui:WaitUiElementAppear>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="486,394" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="450,315" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="输入信息" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,204" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InUiElement="[CUI]" Text="[Label]" Version="V3" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="输入信息 CurrentLabel_1" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="486,222" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="24062a39-cdc1-4e23-a8dc-2d0740c05718" Text="[Label]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780479536236#skuParameter" DesignTimeRectangle="924, 773, 204, 34" DesignTimeScaleFactor="1" FriendlyName="'22码/130edit22码/130savec…'" FullSelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;span&amp;gt;span' idx='5' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl type='' aaname='' class='lzd-Sku-label lzdLabel' tag='SPAN' check:innerText='saveclose' /&gt;" Guid="7d6e9310-f160-4a79-9c75-57e320a0ceda" ImageBase64="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" InformativeScreenshot="3007ba1347614709a39d26a210da7a04.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='__bid_n=18664e99c596540fba4207' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="1049, 781, 18, 18" ElementType="Text" FriendlyName="'save'" FullSelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl aaname='save' idx='2' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl aaname='save' class='s-moddle icon-save attach-icons md-18 btnSave' type='' tag='SPAN' check:innerText='save' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC7SURBVEhL5dW/DoIwEAZwns3Xc2LlEVj0OUw0IWFxZXFhEI0iSPtxNWf80zag9li85Jt69xtKekTVReHcarSdRqcArSn4vaKqFoL3DDcS8GkauEA8X2E2mBwbRlxlwevUhfjix9/gEouEBpItdtxgV4ml6RnAA8Du/onh56Ex+R84zrjbVJZb59/B1lCojycGUwJcxadPmpMWzD3qBr+uzbFL6B7PkxZb9GK/poMUfGwU6ivBimCDBoGBHksnuCRCWYsDAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NForEachUiElement.Body>
+              <uix:NForEachUiElement.Filter>
+                <uuam:FilterArgument LogicalOperator="Or">
+                  <uuam:FilterArgument.Filters>
+                    <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="6">
+                      <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="&gt;" />
+                      <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="&lt;" />
+                      <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="~" />
+                      <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="\" />
+                      <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="/" />
+                      <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="*" />
+                    </scg:List>
+                  </uuam:FilterArgument.Filters>
+                </uuam:FilterArgument>
+              </uix:NForEachUiElement.Filter>
+              <uix:NForEachUiElement.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780490389200#skuParameter" DesignTimeRectangle="551, 336, 891, 400" DesignTimeScaleFactor="1" FriendlyName="'4XL5XLInt:XXSInt:XSInt:…'" FullSelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl class='listOut' tableRow='2' tag='DIV' /&gt;" Guid="0f478794-304b-4463-b880-0826237ea162" InformativeScreenshot="a42c1a5f6427580bf6692c9c92784f3c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NForEachUiElement.Target>
+              <uix:NForEachUiElement.Variables>
+                <Variable x:TypeArguments="ui:UiElement" Name="当前元素" />
+                <Variable x:TypeArguments="x:String" Name="当前元素_Label" />
+                <Variable x:TypeArguments="x:String" Name="CurrentLabel_1" />
+                <Variable x:TypeArguments="x:String" Name="CurrentLabel_2" />
+              </uix:NForEachUiElement.Variables>
+              <uix:NForEachUiElement.VariablesMetadata>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                  <uuam:VariableMetadata Name="当前元素" Type="ui:UiElement" />
+                  <uuam:VariableMetadata Name="当前元素_Label" Type="x:String" />
+                </scg:List>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
+                  <uuam:VariableMetadata Name="CurrentLabel_1" Type="x:String" />
+                </scg:List>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column2" Capacity="4">
+                  <uuam:VariableMetadata Name="CurrentLabel_2" Type="x:String" />
+                </scg:List>
+              </uix:NForEachUiElement.VariablesMetadata>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NForEachUiElement>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARhSURBVHhe7ZpbiE1RGMdnCBGN+yWpSRJRiHjgETVqZB7OXhdnJnmYUqQ8SWjKgxSKEsrtRSiXKCQvrkWUzBgkaTy4lLuUphnG/5vznZl19lnnHGfvzdlzZv3qqzNrfevb3/rvfdb+1jpT4XA4HA6H479SX18/Xmp5UCj5EvZCKLG/rqFhDHeXN4lEYmhq0rLLZy3oG8xu5YunVNIy+W6TUtaxW/niSbnVNvmUiU3sVr7gCVD2ycsu9NWyW/lSU1MzBJNt8U8ed/9RY2PjIHYrb5LJ5CSp5I305PH5Ph6MCdzdPxBarE8L4Gm5l5v7D04AJ0A/EaCpqWmAEGJmQuv5pmHV35UWAJ/PetpbmraEUkswZjqHiB9UzqJqm6K1nprPMInlmGBb70SLNfXcW+0ttsU2DblUI6fhnN4/oxKFiofE7sJ+ZSYaC/sNewAx6ump45yjgTYpuBunfBeMrXlKXqytrR3G6YcHhcoJ24XibMj5DKcfDlqUsi+gWmHHhJSHY2GUi5KPs/IUooanERxc4FxmYLEfX4mB3B0nKiHETjNXfBXOc19wEOi9EfRdnA8t6Mbghr0y8n3PXcFBkM7egOo6N8cWPKEXevOVndwcHCMYTFzm5tgitDxt5szNwTGDOQGcAIUFoFMdpdQsLEhV3BQaKmqo5P2bt09kAqCkXIQdW4MZrJAAntYr4PeJ/X9i0dzAXYGh0haxvnHMD3QN7rLiF4DmgM3XQu7+O6SW2zKC9FhuAXB3JsInnWjafmMCC9ilaGhHiBgdmTHV93zHZ1kCsNFpNLsUBgO++gOkLLcA2NPvs40JU5LinX7EFhMi7GGXLHIJgNy/sEth7AHIcguAZO/Yx8g2dikaTBQlty2muskuWeQWoIj1wDY4ZXkEUKLZPkZ+Y5eiQSn71hKPrIVdsiilAGYF1mP4Cjxkl6LB2Nu2mLjWJXbJomQCYLGrs47RYiO7FA3GrssRU7JLFiUTAFTi4tcy/VVrmIMJ/hXpSWZMeTffiU8pBUidHOGOI4mT9CpdtWbNSO4KDF55Y3Hd3Yh5BTF3rFy7cgR3WSmpAHHACRCRAL7qK219WoAOdikMnP0LD1t4AbBOjKOzfv6zB7xFptAPJvxnYHILIJrZpTBIZh4G3cN7+KMvSCRPAB1b0yIJMSbDqmjDgtiP8HkouwTGIgBtzu5B3LnsUhyZwaIRAAJXI94bI/YPrPbLuDsUfgG4OThmsKgEIHC3R6NO2ICYmxPJxDRuDk2fEeBf4QRwAkQvQLsR8BY3xxa8Ya4a+bZzc3AQxPh9X32n9zh3xQ6t9Sjk+bknXy1fc1dwUAsc7RWge39/g/7NjbtjA27MRNyg62auQsrj3B0cIcRsBDN+Hus2KpWf0WFHHAy5PIX5c/yF3OfwNMKBqm2LL3gfMLGd048GKlgQOMcmKVaGJ6F78pWpzCME5eoMBD9AJz149GifQAtOHIzqfXwNxCH6ynK6DofD4XA48lFR8QdyN++Yg84/rAAAAABJRU5ErkJggg==" InformativeScreenshot="56a5d880949fe8b42a949de627a4bec6.jpg" Selector="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" Url="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780490389200#skuParameter" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="708,244" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="450,165" sap2010:WorkflowViewState.IdRef="Sequence_55">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Chrome: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" InteractionMode="DebuggerApi" ScopeGuid="21ce2c49-89a3-4663-8b20-75783a6c660e" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="622,1629" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="560,92" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                  <uix:NClick ClickType="Single" DisplayName="单击 '变种参数'" sap:VirtualizedContainerService.HintSize="560,159" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21ce2c49-89a3-4663-8b20-75783a6c660e" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780479536236#skuParameter" DesignTimeRectangle="1524, 355, 100, 26" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'变种参数'" FullSelectorArgument="&lt;webctrl aaname='变种参数' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='变种参数' tag='A' type='' class='' check:innerText='变种参数' /&gt;" Guid="9bdb2f06-252f-4d8c-ae26-d548d2e01a9a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAeCAYAAADAZ1t9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANbSURBVGhD7Zi/ilNBFIcFax/AF/BdrAQ7sdrWx7CwtLBLESGBpFiLLdKsyIKkWlgQIY0oCQgbLaJgwCLZ/BnzDfzWcydzk1yR3CnmwsedmXNm5s75zZmbmzuz2cztYjgcRtszxyELlDhZoMTJAiVOFihxskCJkwVKnCxQ4hxNoOl06k5PT91gMIjaLfg0Gg3X7/dv20ajkTs7O/PjWN8Q+rTbbTeZTKJ2OD8/9+PZMXu9np/30HmORVSgm5sbt16vnb1Wq5Wbz+dbvlUgAIgUWzwBJbAIQ7BC+77AYW82mwVRGcfWBXNpszAmaONwj/Wpiy2BlsulW23EgeXqL2pbLBYF/xg22IdAYAkwfQlQVYEIaGxcYTfFrmfT3LbNPlsdFAQicxCB6+Pop3v04p27f9J1D5+/dZ/Gv3w7dvxsv30QHBZOcCgT6LJFW4F2BbMsExErFJi5ONZsm8YOxaOv6pSVWXVREIhjDQEQ5+7j1wXuPWn7dp9Jm+PO9itDC7Z3CcTCCQ5t+FIPRSCo8rEZZMuMG/YrA0E0FpnBGNyVJZeXl4Vn0rvKrunYFARShpA5oUDw9OV7f9xx2X4xWFi3270VJRQIO3V8bBBsBmDfJ5Cdr9VqFcYl4Lv8NM719fVtNl1cXPjNYudW3zrYEoiLYy0m0INnbw4SiEURZBuYMmwg8KfMbudO4GRTMGMCMRcBlr8yAjvBph4eVdi1gWw7fmwS7toodbIl0CaB/ksGsfCy94cgmFZEgtLpdHxgKGMvGwPbeDz2dmWdhGEs6vhh51lkv7q68vfYeDwLvpQhFLUOou+gD8Mf/p1jxaH+dfK70jsItGC7UyWeDYD8OJa0c23fXRkkGC8MOOAr4eQnO3UEBtkpW3udFATSrziy6PO3qc8YjrWTV3335fvUZw72qt9DVhAWr11tfQgg4uAjgUJ7TBTZyAqbQfgRZNsmmMOKaefTWLTjY/vVQUEg4DvHZ8kGfQOB2g75DgqxwYBY0KxvVYEsbIB9cwBz4MePAnzpp+fkLqHqFmlLICBDOMbsVeWfBLsLIQy4drfsNpj/IpBEAcqh3aJnC/2oh5lNOfyVeWyiAlnyn6X1kgVKnCxQ4mSBEicLlDhZoMTJAiVOFihxskCJkwVKmpn7Ay9EO7umo/B0AAAAAElFTkSuQmCC" InformativeScreenshot="d84350b95a78b2b003fb038743c788d1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NForEachUiElement DisplayName="遍历用户界面元素" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='当前元素' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentLabel_1' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='span' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='span' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='span' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='label' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="560,1183" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="21ce2c49-89a3-4663-8b20-75783a6c660e" Version="V3">
+                    <uix:NForEachUiElement.Body>
+                      <ActivityAction x:TypeArguments="x:Int32">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="496,914" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="a" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[CurrentLabel_1]" />
+                          <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_15">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[a]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentLabel_1.Replace("/"," ")]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <uix:NClick ClickType="Single" DisplayName="单击" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="NClick_24" InUiElement="[当前元素]" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="输入信息 'save'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,222" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="21ce2c49-89a3-4663-8b20-75783a6c660e" Text="[a]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780479536236#skuParameter" DesignTimeRectangle="948, 630, 204, 34" DesignTimeScaleFactor="1" FriendlyName="'14码/90edit14码/90saveclo…'" FullSelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;span&amp;gt;span' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl type='' class='lzd-Sku-label lzdLabel' tag='SPAN' aaname='' check:innerText='saveclose' /&gt;" Guid="c54dabbe-861a-4005-ab34-c224638f9d45" ImageBase64="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" InformativeScreenshot="7343496e2bdf3216bd3597a65606b8a7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="1073, 639, 18, 18" ElementType="Text" FriendlyName="'save'" FullSelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl aaname='save' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl aaname='save' type='' tag='SPAN' class='s-moddle icon-save attach-icons md-18 btnSave' check:innerText='save' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADoSURBVEhL5dVLDoIwEAZgzuZx9Cgm7rkGOz2CCQvDhgMYjRHfyrPtb1tKAvISKG6cZFZMv0yGdGqcfYpHSBEkDDFhIJSBATKHhHEScMTgxxym0Ad7L4I779gXHQuYi9rgm4IjMQqdsOyYj0LA26WNyXzdmrOVp4jqMI55eOdiWoHUZRNehDeOPLBwGkbhpDVt+GA4q/+M38Jd819g08VeFQMeLPPjO89ecOmQrp/XGy5caZ2jKCyhjlc6TRvWQWm5KK3Nb5dQlrVXerRFP9rTdAlExymcqBeE28Pha0Dw5HDIRdmxFhh4A+NZtdZn+tVgAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[a]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NForEachUiElement.Body>
+                    <uix:NForEachUiElement.Filter>
+                      <uuam:FilterArgument LogicalOperator="Or">
+                        <uuam:FilterArgument.Filters>
+                          <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="4">
+                            <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="/" />
+                            <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="*" />
+                            <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="&lt;" />
+                            <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="&gt;" />
+                          </scg:List>
+                        </uuam:FilterArgument.Filters>
+                      </uuam:FilterArgument>
+                    </uix:NForEachUiElement.Filter>
+                    <uix:NForEachUiElement.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="550, 126, 891, 400" DesignTimeScaleFactor="1" FriendlyName="'4XL5XLInt:XXSInt:XSInt:…'" FullSelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl class='listOut' tableRow='2' tag='DIV' /&gt;" Guid="adc3f096-bcf1-4c75-a389-47b03082a173" InformativeScreenshot="69cc2e079d09b82d14a922fb6da20ab7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                    </uix:NForEachUiElement.Target>
+                    <uix:NForEachUiElement.Variables>
+                      <Variable x:TypeArguments="ui:UiElement" Name="当前元素" />
+                      <Variable x:TypeArguments="x:String" Name="当前元素_Label" />
+                      <Variable x:TypeArguments="x:String" Name="CurrentLabel_1" />
+                    </uix:NForEachUiElement.Variables>
+                    <uix:NForEachUiElement.VariablesMetadata>
+                      <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                        <uuam:VariableMetadata Name="当前元素" Type="ui:UiElement" />
+                        <uuam:VariableMetadata Name="当前元素_Label" Type="x:String" />
+                      </scg:List>
+                      <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
+                        <uuam:VariableMetadata Name="CurrentLabel_1" Type="x:String" />
+                      </scg:List>
+                    </uix:NForEachUiElement.VariablesMetadata>
+                  </uix:NForEachUiElement>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARhSURBVHhe7ZpbiE1RGMdnCBGN+yWpSRJRiHjgETVqZB7OXhdnJnmYUqQ8SWjKgxSKEsrtRSiXKCQvrkWUzBgkaTy4lLuUphnG/5vznZl19lnnHGfvzdlzZv3qqzNrfevb3/rvfdb+1jpT4XA4HA6H479SX18/Xmp5UCj5EvZCKLG/rqFhDHeXN4lEYmhq0rLLZy3oG8xu5YunVNIy+W6TUtaxW/niSbnVNvmUiU3sVr7gCVD2ycsu9NWyW/lSU1MzBJNt8U8ed/9RY2PjIHYrb5LJ5CSp5I305PH5Ph6MCdzdPxBarE8L4Gm5l5v7D04AJ0A/EaCpqWmAEGJmQuv5pmHV35UWAJ/PetpbmraEUkswZjqHiB9UzqJqm6K1nprPMInlmGBb70SLNfXcW+0ttsU2DblUI6fhnN4/oxKFiofE7sJ+ZSYaC/sNewAx6ump45yjgTYpuBunfBeMrXlKXqytrR3G6YcHhcoJ24XibMj5DKcfDlqUsi+gWmHHhJSHY2GUi5KPs/IUooanERxc4FxmYLEfX4mB3B0nKiHETjNXfBXOc19wEOi9EfRdnA8t6Mbghr0y8n3PXcFBkM7egOo6N8cWPKEXevOVndwcHCMYTFzm5tgitDxt5szNwTGDOQGcAIUFoFMdpdQsLEhV3BQaKmqo5P2bt09kAqCkXIQdW4MZrJAAntYr4PeJ/X9i0dzAXYGh0haxvnHMD3QN7rLiF4DmgM3XQu7+O6SW2zKC9FhuAXB3JsInnWjafmMCC9ilaGhHiBgdmTHV93zHZ1kCsNFpNLsUBgO++gOkLLcA2NPvs40JU5LinX7EFhMi7GGXLHIJgNy/sEth7AHIcguAZO/Yx8g2dikaTBQlty2muskuWeQWoIj1wDY4ZXkEUKLZPkZ+Y5eiQSn71hKPrIVdsiilAGYF1mP4Cjxkl6LB2Nu2mLjWJXbJomQCYLGrs47RYiO7FA3GrssRU7JLFiUTAFTi4tcy/VVrmIMJ/hXpSWZMeTffiU8pBUidHOGOI4mT9CpdtWbNSO4KDF55Y3Hd3Yh5BTF3rFy7cgR3WSmpAHHACRCRAL7qK219WoAOdikMnP0LD1t4AbBOjKOzfv6zB7xFptAPJvxnYHILIJrZpTBIZh4G3cN7+KMvSCRPAB1b0yIJMSbDqmjDgtiP8HkouwTGIgBtzu5B3LnsUhyZwaIRAAJXI94bI/YPrPbLuDsUfgG4OThmsKgEIHC3R6NO2ICYmxPJxDRuDk2fEeBf4QRwAkQvQLsR8BY3xxa8Ya4a+bZzc3AQxPh9X32n9zh3xQ6t9Sjk+bknXy1fc1dwUAsc7RWge39/g/7NjbtjA27MRNyg62auQsrj3B0cIcRsBDN+Hus2KpWf0WFHHAy5PIX5c/yF3OfwNMKBqm2LL3gfMLGd048GKlgQOMcmKVaGJ6F78pWpzCME5eoMBD9AJz149GifQAtOHIzqfXwNxCH6ynK6DofD4XA48lFR8QdyN++Yg84/rAAAAABJRU5ErkJggg==" InformativeScreenshot="364308e2acdf35b24d5055234c83b096.jpg" Selector="&lt;html app='chrome.exe' title='店小秘--编辑Lazada产品' /&gt;" Url="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780479536236#skuParameter" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>
