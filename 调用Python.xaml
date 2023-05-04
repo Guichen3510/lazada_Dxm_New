@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1092,1220</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1254,1361</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>调用Python_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -75,7 +75,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="调用Python" sap:VirtualizedContainerService.HintSize="608,1155" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="调用Python" sap:VirtualizedContainerService.HintSize="654,1296" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -135,7 +135,7 @@
           <OutArgument x:TypeArguments="x:String">[text]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[in_text]</InArgument>
+          <InArgument x:TypeArguments="x:String">中国人</InArgument>
         </Assign.Value>
       </Assign>
       <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python 作用域" sap:VirtualizedContainerService.HintSize="530,708" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="[Py_BibPath]" Path="[Py_Path]" TargetPlatform="x64" Version="Python &gt;=3.10">

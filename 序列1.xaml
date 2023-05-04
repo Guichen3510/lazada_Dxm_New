@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="序列1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1257,1660" sap2010:WorkflowViewState.IdRef="序列1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="序列1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,1660" sap2010:WorkflowViewState.IdRef="序列1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="34">
+    <scg:List x:TypeArguments="x:String" Capacity="68">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -35,6 +35,9 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -85,41 +88,41 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="序列1" sap:VirtualizedContainerService.HintSize="496,1595" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="序列1" sap:VirtualizedContainerService.HintSize="546,1595" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--产品管理" sap:VirtualizedContainerService.HintSize="434,891" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bf96e853-7ec9-4252-9c48-4511ec0e5f58" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--产品管理" sap:VirtualizedContainerService.HintSize="484,891" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bf96e853-7ec9-4252-9c48-4511ec0e5f58" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="400,672" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="450,672" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ClickType="Single" DisplayName="单击 '搜索'" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf96e853-7ec9-4252-9c48-4511ec0e5f58" Version="V1">
+            <uix:NClick ClickType="Single" DisplayName="单击 '搜索'" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf96e853-7ec9-4252-9c48-4511ec0e5f58" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/draft.htm?dxmState=draft" DesignTimeRectangle="826, 322, 52, 32" ElementType="Button" FriendlyName="'搜索'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='button btn-determine serchBtn m-right10' aaname='搜索' check:innerText='搜索' /&gt;" Guid="1f282080-c7b9-4435-9efb-4da90e9f3fb9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAkCAYAAADckvn+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGTSURBVGhD7ZmxbsMgFEX7T537Y83Sf/GWMUulSl68V8piyVsWDxm8OFO2Vx5wwdjUjQ2VCuVIV4qBJD5+DxQpT5Q5/0fw9NnTy9sHPb++Jx12YBdgBHOQQ9gFGEHfwpQDimCqAUUw1YAimGpAuODxSsPtSgczdqb6RjT042x8LRfqaKTKO7cvIK5gM8rPGtqzHh+pE7IKCLDMo+yXBkGClf1FJLhT3YqqsRzPO5Xlqq7dbGIVZLpWjVftXY9ogcmaR+iayXdtCIgu+GMFp2tEuAuMhJQXnXD0zG0MiCZY96pFv2fWgr5KmgcSHhAoqE5MZvGknQquRR06eD9XbVrhvQEBgiwnqtZYkYPZb0uWN42HoyrrHlhM2KED4u5BEZZ0ZbhCdl/ZsTm+NfslQXRBjmkznlvcODIV190gXssuiLAXwa8ITg8Q3ymIVrZzVlBe4/0BoiBI0Oy5/uKeinyt1zh7S4zLa8zLCms8Ms7ajQHhFfyjAUUw1YAimGpAEUw1oAimGmAEs//zJfu/z3Ilc0GiL+U47l+/0MjtAAAAAElFTkSuQmCC" InformativeScreenshot="5f4a3c5826a83106904c4d7457c6a1d5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--产品管理' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ClickType="Single" DisplayName="单击 '编辑'" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf96e853-7ec9-4252-9c48-4511ec0e5f58" Version="V1">
+            <uix:NClick ClickType="Single" DisplayName="单击 '编辑'" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf96e853-7ec9-4252-9c48-4511ec0e5f58" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/draft.htm?dxmState=draft" DesignTimeRectangle="1713, 561, 80, 22" ElementType="Text" FriendlyName="'编辑'" FullSelectorArgument="&lt;webctrl parentid='goodsContent' tag='TABLE' /&gt;&lt;webctrl aaname='编辑' tableRow='3' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='goodsContent' tag='TABLE' /&gt;&lt;webctrl aaname='编辑' type='' tag='A' class='' check:innerText='编辑' /&gt;" Guid="08026aeb-286a-4570-ade8-85e38f99b075" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAaCAYAAAApOXvdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFvSURBVGhD7ZbNjYNADEa3tlRCJxSwHUSiAVogFeTCLZeIY3JOB45tPB4PQ8hK6xP4SSP+kXh8Hs8PBK6EUGdCqDMh1JkQ6kwIdWYh9AXdeYTuKYfCfRjhdJ7gLsdL6Ho7ysF4g9PvdWXc4CK37JlSKMnoH7x76dekpGGl008wssw7Mg9ojye0FENCNXUFOcW1dDw/REJnMFnN8AJ4TtDgx7d/TCiVOz8XMCo0py2nbz2hFkm1ljmVthW/GNVUsD8Wc+ikyWOh/afyFdlJpJ03KeFVA0PRG01tTxihJl348Z0IpXJOXXxtW4rGdONPaYpzMg4nlFKmc6M0HmwwW0KVSKhSlrwiyxyWvJI2HFaoTWo7REIz3OFFgMyNnxNKKZ7vbTDNXxN6EKkqlLs8f/AsihO4KXR+jqlKHpdS6cekcdiStwkToYomOK9DmSSUtni9wf0qoYcVGvyLEOpMCHUmhDoTQp0Joc6EUGdCqCsAb42gKYpAT5mLAAAAAElFTkSuQmCC" InformativeScreenshot="70c45648fc3e93aca28aec932b569a22.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--产品管理' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="1705, 491, 97, 40" ElementType="Text" FriendlyName="'操作'" FullSelectorArgument="&lt;webctrl parentid='goodsContent' tag='TABLE' /&gt;&lt;webctrl aaname='操作' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='goodsContent' tag='TABLE' /&gt;&lt;webctrl aaname='操作' type='' tag='TH' class='operating w80' check:innerText='操作' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAsCAYAAAB8K3ZrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGbSURBVHhe7ZzBqoMwEEX9/694UCgu2lVB3Ap2XfILduMPuJ6X0cQmaouNPt4Fb+AskiYU5jgzcWMmHHAja9tWCAZ+ZF3XCfl/KAUQSgGEUgChFEAoBRBKAYRSAKEUQCgFEEoBhFIAoRRAkqU09VV+TqU8dN7cJT+d7XyBwiycO8vNBOcme47OrlLy+hnsMXKbBfwp1UVlDeciQeMekiTlUbgs6LlKZVZmiimDNS/oDZe7NMF/Hol9MmUVLwl9RvWCAqEsYSO7SIkzx675jHBoefKlSslrMwhSEewrMzZKscG0ZaZSKRrUXoaXosKGvqJSQnF5UVoRLssWLwnut4OyWYqWonWZUkpl0Xl0IWCmzEiQEjbo+RM9CHrzpDtZlPKZ7T1lsfxM8AGnlFXs0uiHNfdeMmJvVk185qOUCUd+d9lHShDssXy5YEfBZaasIknK2Ng1kC7QPvhxT3H9h+XrK5IzhfwdlAIIpQBCKYBQCiCUAgilAEIpgFAKIJQCCKUAQimAUAoglAJIJEUnBAM/+MUJkEEpgOMlReQXaqSVHJVVYU0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ClickType="Single" DisplayName="单击 '编辑分类'" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf96e853-7ec9-4252-9c48-4511ec0e5f58" Version="V1">
+            <uix:NClick ClickType="Single" DisplayName="单击 '编辑分类'" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf96e853-7ec9-4252-9c48-4511ec0e5f58" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/draft.htm?dxmState=draft" DesignTimeRectangle="1001, 369, 78, 32" ElementType="Button" FriendlyName="'编辑分类'" FullSelectorArgument="&lt;webctrl aaname='编辑分类' parentid='batchClassifyMatchingCategoryModal' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='编辑分类' parentid='batchClassifyMatchingCategoryModal' tag='BUTTON' type='button' class='button btn-determine editCategotyBtn' check:innerText='编辑分类' /&gt;" Guid="ae4404ee-f363-4e71-a985-b53ae8ab50bb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAkCAYAAAAaV21HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALLSURBVGhD7ZpNS1VRFIb9T439J/2H5kHU3KbR2Gk0SkMoaCDUqAQDHQg6UigUKQMzI049R9/DcrnPvfvctcFB64WXc8/an+vZH4KcpS7VRAmykQaQrz4ddstP3nT3Hm6kKwwrmEkDyIQ43TCTBpCliun5lhJk0FKCDFpKkEFLCTJoKUEGLSXIoKUmIFc3D7qdw283Yg9WP3bfzy/7Mhu35bS5/+x976PT8+uZ3NS7nS+32j5d3+32v/7o25XGtqY982A83qmrOWnc0hi1lsIgmQxJkRz+9fvPdY+3ZRMmGSVg+1A5ptwnqeQ9jLEFe/zycz8udagrkGqH/bhTLIVBWiB2p5TqkUQJNm1IqCQPkne7IJi+7a6bZYEslS1iKQRSK6xjCpCaHUl9wNUkbg0A7SxfBmBbRt/ArdVYv/MshUDa3QWkWTvSGiAf9o6H4wyEMdG/6szbddRRfV+mueGTs4vRelMtNbkjX28d9b+ZGCt7/G+iJVH26MV2n8zzt3sDSNqWjhxgiFGHPmk/S5TTL5DUlxZJO45xiPGUVGbHrrUUBqmJInYZkwLQytpuP1nA2SdQ/JEjbhOz8nAxMer7mAXCOABlfrYe7XyfxGrvWG8pfEcyeSXFBIHI+xhIJcqzdkfamOIe0BjIWt0pSG+S064sySZq/xgQB2pJHqRfAJl6LIaNeVPn7Odlf00sAq1kqQlIEkDsAO4o3sd25PrW1X+VqculP29HIhsnZhfExunDxqwZB4g8cSuYUggkE9LFjkmQyZHQIkcbsF4eYukI0hdjU27jWHPEGgvrRCx6pGWp2dEGBEmTFL/t5HhHPBUTSHYwEEiI3yrHgFGf1LHtBULyQGiHPEBv249dtFpLTe/I/9FSggxaSpBBSwkyaClBBi0lyKClBBm0lCCDlhJk0NIAMj+imu7iR1T5Wd80w6r4WV8qpgTZRF33F8WgPkDibyaRAAAAAElFTkSuQmCC" InformativeScreenshot="183362e1853a3bcf4a3340f0d2776971.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--产品管理' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -131,7 +134,7 @@
         <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARhSURBVHhe7ZpbiE1RGMdnCBGN+yWpSRJRiHjgETVqZB7OXhdnJnmYUqQ8SWjKgxSKEsrtRSiXKCQvrkWUzBgkaTy4lLuUphnG/5vznZl19lnnHGfvzdlzZv3qqzNrfevb3/rvfdb+1jpT4XA4HA6H479SX18/Xmp5UCj5EvZCKLG/rqFhDHeXN4lEYmhq0rLLZy3oG8xu5YunVNIy+W6TUtaxW/niSbnVNvmUiU3sVr7gCVD2ycsu9NWyW/lSU1MzBJNt8U8ed/9RY2PjIHYrb5LJ5CSp5I305PH5Ph6MCdzdPxBarE8L4Gm5l5v7D04AJ0A/EaCpqWmAEGJmQuv5pmHV35UWAJ/PetpbmraEUkswZjqHiB9UzqJqm6K1nprPMInlmGBb70SLNfXcW+0ttsU2DblUI6fhnN4/oxKFiofE7sJ+ZSYaC/sNewAx6ump45yjgTYpuBunfBeMrXlKXqytrR3G6YcHhcoJ24XibMj5DKcfDlqUsi+gWmHHhJSHY2GUi5KPs/IUooanERxc4FxmYLEfX4mB3B0nKiHETjNXfBXOc19wEOi9EfRdnA8t6Mbghr0y8n3PXcFBkM7egOo6N8cWPKEXevOVndwcHCMYTFzm5tgitDxt5szNwTGDOQGcAIUFoFMdpdQsLEhV3BQaKmqo5P2bt09kAqCkXIQdW4MZrJAAntYr4PeJ/X9i0dzAXYGh0haxvnHMD3QN7rLiF4DmgM3XQu7+O6SW2zKC9FhuAXB3JsInnWjafmMCC9ilaGhHiBgdmTHV93zHZ1kCsNFpNLsUBgO++gOkLLcA2NPvs40JU5LinX7EFhMi7GGXLHIJgNy/sEth7AHIcguAZO/Yx8g2dikaTBQlty2muskuWeQWoIj1wDY4ZXkEUKLZPkZ+Y5eiQSn71hKPrIVdsiilAGYF1mP4Cjxkl6LB2Nu2mLjWJXbJomQCYLGrs47RYiO7FA3GrssRU7JLFiUTAFTi4tcy/VVrmIMJ/hXpSWZMeTffiU8pBUidHOGOI4mT9CpdtWbNSO4KDF55Y3Hd3Yh5BTF3rFy7cgR3WSmpAHHACRCRAL7qK219WoAOdikMnP0LD1t4AbBOjKOzfv6zB7xFptAPJvxnYHILIJrZpTBIZh4G3cN7+KMvSCRPAB1b0yIJMSbDqmjDgtiP8HkouwTGIgBtzu5B3LnsUhyZwaIRAAJXI94bI/YPrPbLuDsUfgG4OThmsKgEIHC3R6NO2ICYmxPJxDRuDk2fEeBf4QRwAkQvQLsR8BY3xxa8Ya4a+bZzc3AQxPh9X32n9zh3xQ6t9Sjk+bknXy1fc1dwUAsc7RWge39/g/7NjbtjA27MRNyg62auQsrj3B0cIcRsBDN+Hus2KpWf0WFHHAy5PIX5c/yF3OfwNMKBqm2LL3gfMLGd048GKlgQOMcmKVaGJ6F78pWpzCME5eoMBD9AJz149GifQAtOHIzqfXwNxCH6ynK6DofD4XA48lFR8QdyN++Yg84/rAAAAABJRU5ErkJggg==" InformativeScreenshot="98f9a34e786d75319b97f4cade4b47bf.png" Selector="&lt;html app='msedge.exe' title='店小秘--产品管理' /&gt;" Url="https://www.dianxiaomi.com/lazadaProduct/draft.htm?dxmState=draft" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘" sap:VirtualizedContainerService.HintSize="434,553" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="5fc64284-3151-4541-8a4e-17751fb46788" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘" sap:VirtualizedContainerService.HintSize="434,553" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="5fc64284-3151-4541-8a4e-17751fb46788" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
