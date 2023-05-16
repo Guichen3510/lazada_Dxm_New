@@ -14,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.4.0",
-  "projectVersion": "1.0.4",
+  "projectVersion": "1.0.5",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -43,22 +43,11 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [
-      {
-        "templateType": "Generic",
-        "fileName": ".templates\\店小秘批量自动化 模板.xaml"
-      }
-    ],
+    "fileInfoCollection": [],
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
-    {
-      "filePath": "Main.xaml",
-      "uniqueId": "d99bdf96-49f1-416d-9f06-8e822acfb809",
-      "input": [],
-      "output": []
-    },
     {
       "filePath": "ocr试验.xaml",
       "uniqueId": "519794a0-65f7-412e-8274-784c06d21daf",
@@ -66,20 +55,8 @@
       "output": []
     },
     {
-      "filePath": "店小秘批量自动化(翻译版).xaml",
-      "uniqueId": "c558996e-d374-4051-a016-ea088c47182e",
-      "input": [],
-      "output": []
-    },
-    {
       "filePath": "店小秘抓取URL.xaml",
       "uniqueId": "d4386cf0-b99c-49ed-a9c0-ee3670c5c3f8",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "店小秘批量自动化-状态机-20230226.xaml",
-      "uniqueId": "191f288d-1844-4bd1-844d-311a9fb165ad",
       "input": [],
       "output": []
     },
