@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="店小秘抓取URL" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="536,3026" sap2010:WorkflowViewState.IdRef="店小秘抓取URL_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="店小秘抓取URL" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,2945" sap2010:WorkflowViewState.IdRef="店小秘抓取URL_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="74">
       <x:String>GlobalConstantsNamespace</x:String>
@@ -90,7 +90,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="店小秘-1688产品信息抓取" sap:VirtualizedContainerService.HintSize="546,2961" sap2010:WorkflowViewState.IdRef="Sequence_12">
+  <Sequence DisplayName="店小秘-1688产品信息抓取" sap:VirtualizedContainerService.HintSize="546,2880" sap2010:WorkflowViewState.IdRef="Sequence_12">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -99,13 +99,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用应用程序/浏览器" sap:VirtualizedContainerService.HintSize="484,2850" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2cb72885-967a-4348-a179-b981418a76ec" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用应用程序/浏览器" sap:VirtualizedContainerService.HintSize="484,2769" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2cb72885-967a-4348-a179-b981418a76ec" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="450,2631" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="450,2550" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="text" />
               <Variable x:TypeArguments="x:String" Name="date1" />
@@ -194,27 +194,44 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <uix:NClick ClickType="Single" DelayAfter="2" DisplayName="单击 '确定'" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2cb72885-967a-4348-a179-b981418a76ec" Version="V1">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="单击 '确定'" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2cb72885-967a-4348-a179-b981418a76ec" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/crawl/index.htm" DesignTimeRectangle="1051, 385, 78, 32" ElementType="Button" FriendlyName="'确定'" FullSelectorArgument="&lt;webctrl id='queryCustomTimeBtn' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='queryCustomTimeBtn' tag='BUTTON' type='button' class='button btn-determine' aaname='　确定　' check:innerText='确定' /&gt;" Guid="ce461695-6e80-4bae-9d52-a9744e856c13" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAkCAYAAAAaV21HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHZSURBVGhD7Zq7SgNBGEZ9J2vfxHewFwR7bX2AtJZeECwsBDsNWMRObRJQhKARokZk5Kz7bdZhcnM2O5H8Bz5mJzPZhbP/7iQwK86oBBNZEYXIg6u2W9s+daubJ5YpgiuciUKkSZw9OBOFyNBEy+QIExkZYSIjI0xkZISJjIwwkZERJjIyYqFEttrPrnF+Fxzzs9G4dE+9d7d7dBMcryuidpEIeOkP8qv+gLyz1kPeG4LY0DkUvtPp9t363kVwvI6IZBVJJTXvu9kxIsvSGLt9fP0lKCR6FJNuQJURyUQeNzuZMNJ7G2QJoYpD5DSPvX9T5h2RRCRiEAQ85lv711kFIpVHHxHMKR+HzrMIEUlEUjUSiChaifXhcwT779VxMJebELp21RHJFhtf5F8qkvn+u7TuiNpFUo0sMlRaWSQt4saJpNU8+kstkiCiLHLncPSjyzyJ8sXR//j8ymcOmWZRqioimUiJo2UFl7BxFckx4hBI3yoyr0ha+gji543GQiK1QCEd6C+9yHJ8GZLHZ8Axc/g7KPG0o14FUK7aeUckF/nfI0xkZISJjIwwkZERJjIywkRGRpjIyAgTGRlhIiMjCpG2iWr2BDdR2ba+2YKr4LY+Iw4TWQnOfQOCa0zrTa6zMwAAAABJRU5ErkJggg==" InformativeScreenshot="f7ddf183a97ad3aeaf9dc64a68c0c893.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='__bid_n=18664e99c596540fba4207' title='店小秘--数据采集' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="1" DisplayName="选择页面显示条数" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="100条">
-              <ui:SelectItem.Items>
-                <scg:List x:TypeArguments="x:String" Capacity="4">
-                  <x:String>50条</x:String>
-                  <x:String>100条</x:String>
-                  <x:String>300条</x:String>
-                </scg:List>
-              </ui:SelectItem.Items>
-              <ui:SelectItem.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a83ac3c6-6a9a-42fa-b193-5a1954069f7e" InformativeScreenshot="c7eb8897b727309b7914bac11c06558c" Selector="&lt;webctrl name='pageselct' tag='SELECT' /&gt;" WaitForReady="COMPLETE">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                </ui:Target>
-              </ui:SelectItem.Target>
-            </ui:SelectItem>
+            <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="1" DisplayName="选择页面显示条数" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="100条">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>50条</x:String>
+                        <x:String>100条</x:String>
+                        <x:String>300条</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a83ac3c6-6a9a-42fa-b193-5a1954069f7e" InformativeScreenshot="c7eb8897b727309b7914bac11c06558c" Selector="&lt;webctrl name='pageselct' tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
             <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="提取表格数据" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='产品链接Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='中文标题'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='短描述'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='美元计价'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='div' text='来源：' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Page" MaximumResults="10000" ScopeIdentifier="2cb72885-967a-4348-a179-b981418a76ec" Version="V1">
               <uix:NExtractData.NextLink>
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/crawl/index.htm" DesignTimeRectangle="1539, 768, 26, 28" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'&gt;'" FullSelectorArgument="&lt;webctrl aaname='&amp;gt;' parentid='upPage' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='&amp;gt;' parentid='upPage' tag='A' type='' class='' check:innerText='&amp;gt;' /&gt;" Guid="988490c8-684f-4ceb-8f7c-f3446458b2d9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABySURBVFhHY/g/QGAEWnz37t3/A4HhPgZxaAnQzR+1mGZg1OJRi2kGKLL49u7z/51WPYXySAMU+xhsefcpkh1AscUwQKoDqGYxDBAb/EPXxwMSx8QGKzZAsY/JBaMWj1pMMzBq8Qi0GCQwEBjuY/qC//8BwtOzPwdN5DsAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='__bid_n=18664e99c596540fba4207' title='店小秘--数据采集' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
@@ -223,7 +240,7 @@
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/crawl/index.htm" DesignTimeRectangle="257, 887, 1089, 32700" DesignTimeScaleFactor="1" FriendlyName="'找货源1688淘宝 来源：1688'" FullSelectorArgument="&lt;webctrl parentid='pageList' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="963f7d9f-a7c0-4a6a-a0f0-a83c68e6d1a7" InformativeScreenshot="68d0e03c7e0f1f47cc978f795a04d072.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='__bid_n=18664e99c596540fba4207' title='店小秘--数据采集' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="写入范围" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\CG\Desktop\店小秘-1688店铺-产品URL抓取.xlsx">
+            <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="写入范围" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\CG\Desktop\UIpath处理文件夹\店小秘-1688店铺-产品URL抓取.xlsx">
               <ui:WriteRange.StartingCell>
                 <InArgument x:TypeArguments="x:String">
                   <Literal x:TypeArguments="x:String" Value="" />
@@ -234,7 +251,7 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARhSURBVHhe7ZpbiE1RGMdnCBGN+yWpSRJRiHjgETVqZB7OXhdnJnmYUqQ8SWjKgxSKEsrtRSiXKCQvrkWUzBgkaTy4lLuUphnG/5vznZl19lnnHGfvzdlzZv3qqzNrfevb3/rvfdb+1jpT4XA4HA6H479SX18/Xmp5UCj5EvZCKLG/rqFhDHeXN4lEYmhq0rLLZy3oG8xu5YunVNIy+W6TUtaxW/niSbnVNvmUiU3sVr7gCVD2ycsu9NWyW/lSU1MzBJNt8U8ed/9RY2PjIHYrb5LJ5CSp5I305PH5Ph6MCdzdPxBarE8L4Gm5l5v7D04AJ0A/EaCpqWmAEGJmQuv5pmHV35UWAJ/PetpbmraEUkswZjqHiB9UzqJqm6K1nprPMInlmGBb70SLNfXcW+0ttsU2DblUI6fhnN4/oxKFiofE7sJ+ZSYaC/sNewAx6ump45yjgTYpuBunfBeMrXlKXqytrR3G6YcHhcoJ24XibMj5DKcfDlqUsi+gWmHHhJSHY2GUi5KPs/IUooanERxc4FxmYLEfX4mB3B0nKiHETjNXfBXOc19wEOi9EfRdnA8t6Mbghr0y8n3PXcFBkM7egOo6N8cWPKEXevOVndwcHCMYTFzm5tgitDxt5szNwTGDOQGcAIUFoFMdpdQsLEhV3BQaKmqo5P2bt09kAqCkXIQdW4MZrJAAntYr4PeJ/X9i0dzAXYGh0haxvnHMD3QN7rLiF4DmgM3XQu7+O6SW2zKC9FhuAXB3JsInnWjafmMCC9ilaGhHiBgdmTHV93zHZ1kCsNFpNLsUBgO++gOkLLcA2NPvs40JU5LinX7EFhMi7GGXLHIJgNy/sEth7AHIcguAZO/Yx8g2dikaTBQlty2muskuWeQWoIj1wDY4ZXkEUKLZPkZ+Y5eiQSn71hKPrIVdsiilAGYF1mP4Cjxkl6LB2Nu2mLjWJXbJomQCYLGrs47RYiO7FA3GrssRU7JLFiUTAFTi4tcy/VVrmIMJ/hXpSWZMeTffiU8pBUidHOGOI4mT9CpdtWbNSO4KDF55Y3Hd3Yh5BTF3rFy7cgR3WSmpAHHACRCRAL7qK219WoAOdikMnP0LD1t4AbBOjKOzfv6zB7xFptAPJvxnYHILIJrZpTBIZh4G3cN7+KMvSCRPAB1b0yIJMSbDqmjDgtiP8HkouwTGIgBtzu5B3LnsUhyZwaIRAAJXI94bI/YPrPbLuDsUfgG4OThmsKgEIHC3R6NO2ICYmxPJxDRuDk2fEeBf4QRwAkQvQLsR8BY3xxa8Ya4a+bZzc3AQxPh9X32n9zh3xQ6t9Sjk+bknXy1fc1dwUAsc7RWge39/g/7NjbtjA27MRNyg62auQsrj3B0cIcRsBDN+Hus2KpWf0WFHHAy5PIX5c/yF3OfwNMKBqm2LL3gfMLGd048GKlgQOMcmKVaGJ6F78pWpzCME5eoMBD9AJz149GifQAtOHIzqfXwNxCH6ynK6DofD4XA48lFR8QdyN++Yg84/rAAAAABJRU5ErkJggg==" InformativeScreenshot="1670052aa5f2e44084ffed5dca2ba0ea.png" Selector="&lt;html app='msedge.exe' title='店小秘--数据采集' /&gt;" Url="https://www.dianxiaomi.com/crawl/index.htm" />
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARhSURBVHhe7ZpbiE1RGMdnCBGN+yWpSRJRiHjgETVqZB7OXhdnJnmYUqQ8SWjKgxSKEsrtRSiXKCQvrkWUzBgkaTy4lLuUphnG/5vznZl19lnnHGfvzdlzZv3qqzNrfevb3/rvfdb+1jpT4XA4HA6H479SX18/Xmp5UCj5EvZCKLG/rqFhDHeXN4lEYmhq0rLLZy3oG8xu5YunVNIy+W6TUtaxW/niSbnVNvmUiU3sVr7gCVD2ycsu9NWyW/lSU1MzBJNt8U8ed/9RY2PjIHYrb5LJ5CSp5I305PH5Ph6MCdzdPxBarE8L4Gm5l5v7D04AJ0A/EaCpqWmAEGJmQuv5pmHV35UWAJ/PetpbmraEUkswZjqHiB9UzqJqm6K1nprPMInlmGBb70SLNfXcW+0ttsU2DblUI6fhnN4/oxKFiofE7sJ+ZSYaC/sNewAx6ump45yjgTYpuBunfBeMrXlKXqytrR3G6YcHhcoJ24XibMj5DKcfDlqUsi+gWmHHhJSHY2GUi5KPs/IUooanERxc4FxmYLEfX4mB3B0nKiHETjNXfBXOc19wEOi9EfRdnA8t6Mbghr0y8n3PXcFBkM7egOo6N8cWPKEXevOVndwcHCMYTFzm5tgitDxt5szNwTGDOQGcAIUFoFMdpdQsLEhV3BQaKmqo5P2bt09kAqCkXIQdW4MZrJAAntYr4PeJ/X9i0dzAXYGh0haxvnHMD3QN7rLiF4DmgM3XQu7+O6SW2zKC9FhuAXB3JsInnWjafmMCC9ilaGhHiBgdmTHV93zHZ1kCsNFpNLsUBgO++gOkLLcA2NPvs40JU5LinX7EFhMi7GGXLHIJgNy/sEth7AHIcguAZO/Yx8g2dikaTBQlty2muskuWeQWoIj1wDY4ZXkEUKLZPkZ+Y5eiQSn71hKPrIVdsiilAGYF1mP4Cjxkl6LB2Nu2mLjWJXbJomQCYLGrs47RYiO7FA3GrssRU7JLFiUTAFTi4tcy/VVrmIMJ/hXpSWZMeTffiU8pBUidHOGOI4mT9CpdtWbNSO4KDF55Y3Hd3Yh5BTF3rFy7cgR3WSmpAHHACRCRAL7qK219WoAOdikMnP0LD1t4AbBOjKOzfv6zB7xFptAPJvxnYHILIJrZpTBIZh4G3cN7+KMvSCRPAB1b0yIJMSbDqmjDgtiP8HkouwTGIgBtzu5B3LnsUhyZwaIRAAJXI94bI/YPrPbLuDsUfgG4OThmsKgEIHC3R6NO2ICYmxPJxDRuDk2fEeBf4QRwAkQvQLsR8BY3xxa8Ya4a+bZzc3AQxPh9X32n9zh3xQ6t9Sjk+bknXy1fc1dwUAsc7RWge39/g/7NjbtjA27MRNyg62auQsrj3B0cIcRsBDN+Hus2KpWf0WFHHAy5PIX5c/yF3OfwNMKBqm2LL3gfMLGd048GKlgQOMcmKVaGJ6F78pWpzCME5eoMBD9AJz149GifQAtOHIzqfXwNxCH6ynK6DofD4XA48lFR8QdyN++Yg84/rAAAAABJRU5ErkJggg==" InformativeScreenshot="1670052aa5f2e44084ffed5dca2ba0ea.png" Selector="&lt;html app='msedge.exe' title='店小秘--数据采集' /&gt;" Title="店小秘--数据采集" Url="https://www.dianxiaomi.com/crawl/index.htm" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
