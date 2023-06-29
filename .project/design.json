@@ -3,5 +3,7 @@
     {
       "Key": "Edge-店小秘批量自动"
     }
-  ]
+  ],
+  "SeparateRuntimeDependencies": true,
+  "IncludeSources": true
 }
