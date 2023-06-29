@@ -2320,7 +2320,7 @@
                                                                       </uix:NGetText.Target>
                                                                     </uix:NGetText>
                                                                     <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="636,96" sap2010:WorkflowViewState.IdRef="LogMessage_45" Level="Info" Message="[wenben2]" />
-                                                                    <If Condition="[wenben1=&quot;图片尺寸违规（0）&quot; or wenben2 =&quot;图片链接失效（0）&quot;]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="636,1339" sap2010:WorkflowViewState.IdRef="If_37">
+                                                                    <If Condition="[wenben1 = &quot;图片尺寸违规 0&quot; OR wenben2 = &quot;图片链接失效 0&quot;]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="636,1339" sap2010:WorkflowViewState.IdRef="If_37">
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
