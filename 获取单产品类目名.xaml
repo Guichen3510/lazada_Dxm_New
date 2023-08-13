@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="试验" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1092,523" sap2010:WorkflowViewState.IdRef="试验_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="试验" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1211,618" sap2010:WorkflowViewState.IdRef="试验_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="88">
       <x:String>GlobalConstantsNamespace</x:String>
@@ -47,6 +47,10 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -100,9 +104,11 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="496,350" sap2010:WorkflowViewState.IdRef="Sequence_52">
+  <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_52">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="title_1" />
       <Variable x:TypeArguments="x:String" Name="ENtitle" />
@@ -112,19 +118,5 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_15">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:String">[title_1]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:String">中国人</InArgument>
-      </Assign.Value>
-    </Assign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="调用Python.xaml - 调用工作流文件" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="调用Python.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_text">[title_1]</InArgument>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_End_Output">[ENtitle]</OutArgument>
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
   </Sequence>
 </Activity>

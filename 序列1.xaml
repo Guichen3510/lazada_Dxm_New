@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="序列1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1227,2779" sap2010:WorkflowViewState.IdRef="序列1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="序列1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1211,857" sap2010:WorkflowViewState.IdRef="序列1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="68">
       <x:String>System.Activities</x:String>
@@ -102,7 +102,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="序列1" sap:VirtualizedContainerService.HintSize="718,2714" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="序列1" sap:VirtualizedContainerService.HintSize="546,792" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -111,184 +111,32 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="656,2603" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="5f4db836-a2f4-4a4a-b126-25ca6b7ffdb0" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--数据采集" sap:VirtualizedContainerService.HintSize="484,681" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="9a025e19-aa9d-4d71-95a2-17a97757a88b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="622,2384" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="450,462" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <Sequence.Variables>
-              <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="x:String" Name="idx" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NForEachUiElement DisplayName="遍历用户界面元素" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='当前元素' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentLabel_1' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='i' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="560,2271" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="5f4db836-a2f4-4a4a-b126-25ca6b7ffdb0" Version="V3">
-              <uix:NForEachUiElement.Body>
-                <ActivityAction x:TypeArguments="x:Int32">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="496,2002" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:Int32" Name="D" />
-                      <Variable x:TypeArguments="x:Int32" Name="I" />
-                      <Variable x:TypeArguments="x:String" Name="Num_Cap1" />
-                      <Variable x:TypeArguments="x:String" Name="Num_Total" />
-                      <Variable x:TypeArguments="x:Int32" Name="Num_Cap_Int" />
-                      <Variable x:TypeArguments="x:Int32" Name="Num_Total_Int" />
-                    </Sequence.Variables>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="496,195" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_1">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[Has]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[Bas.Replace("Products","")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:CommentOut>
-                    <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="496,195" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_2">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[Has]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[Has.Replace(",","")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:CommentOut>
-                    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_3">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:Int32">[D]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:Int32">[CurrentLabel_1. IndexOf("X") +1]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[D]" />
-                    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_4">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:Int32">[I]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:Int32">[CurrentLabel_1. IndexOf("X") -1]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_5">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[Num_Cap1]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[CurrentLabel_1.Substring(D).Trim()]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[Num_Cap1]" />
-                    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_6">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[Num_Total]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[CurrentLabel_1.Substring(0,I).Trim()]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_7">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:Int32">[Num_Cap_Int]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:Int32">[Integer.Parse(Num_Cap1)]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_8">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:Int32">[Num_Total_Int]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:Int32">[Integer.Parse(Num_Total)]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[Num_Cap_Int]" />
-                    <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[Num_Total_Int]" />
-                    <If Condition="[Num_Cap_Int&lt;331 Or Num_Total_Int&lt;331]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="434,413" sap2010:WorkflowViewState.IdRef="If_1">
-                      <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="[当前元素]" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                        </Sequence>
-                      </If.Then>
-                      <If.Else>
-                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_15" />
-                      </If.Else>
-                    </If>
-                  </Sequence>
-                </ActivityAction>
-              </uix:NForEachUiElement.Body>
-              <uix:NForEachUiElement.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="543, 598, 890, 314" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL myj-drop'" FullSelectorArgument="&lt;webctrl class='w-full' idx='2' tag='TABLE' /&gt;&lt;webctrl id='myj-drop' tableRow='3' tag='UL' /&gt;" Guid="aa78d1bc-02c8-4165-8d69-1014da6469f7" InformativeScreenshot="7f6ae0f7b01cba6c1a4d6417117ec422.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
-              </uix:NForEachUiElement.Target>
-              <uix:NForEachUiElement.Variables>
-                <Variable x:TypeArguments="ui:UiElement" Name="当前元素" />
-                <Variable x:TypeArguments="x:String" Name="当前元素_Label" />
-                <Variable x:TypeArguments="x:String" Name="CurrentLabel_1" />
-              </uix:NForEachUiElement.Variables>
-              <uix:NForEachUiElement.VariablesMetadata>
-                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
-                  <uuam:VariableMetadata Name="当前元素" Type="ui:UiElement" />
-                  <uuam:VariableMetadata Name="当前元素_Label" Type="x:String" />
-                </scg:List>
-                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
-                  <uuam:VariableMetadata Name="CurrentLabel_1" Type="x:String" />
-                </scg:List>
-              </uix:NForEachUiElement.VariablesMetadata>
-            </uix:NForEachUiElement>
+            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="idx" DisplayName="获取属性 'unchecked'" sap:VirtualizedContainerService.HintSize="388,211" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[idx]" ScopeIdentifier="9a025e19-aa9d-4d71-95a2-17a97757a88b" Version="V3">
+              <uix:NGetAttributeGeneric.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/crawl/index.htm" CvTextArgument="B#13_MY" CvType="Text" DesignTimeRectangle="668, 544, 84, 23" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='                              童装13_MY' parentid='selectLazadaShopModal' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                              童装13_MY' parentid='selectLazadaShopModal' tag='LABEL' type='' class='' check:innerText='童装13_MY' /&gt;" Guid="9d5e9a17-6ed0-4db2-b1d3-bd7c1125c3d5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAbCAYAAAD4WUj2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVGhD7Zg9T1sxFIb735AqsSJVrHyIThVfQwaE2KqKrWql/IKq3UBswAgoCxmBiWTNFsaMrp4r3qsjx77XEbGSFr/S0fX1PT4+fnzsCD64oqwqgDOrAM6sAjizCuDMKoAzqwDOrAI4s2rAo9HIdbtd1+l0Wg0//FP0/cdPd9/vv741y/cdj1/c0fFJ9fxXVQMGWq/Xe31rFn74+zo7v3ArH1eTDJiIJ+PUnhWwHS/ZPDa3PydvELEY4xcE44mz9mndPQ8GVXy1rSaTSZWv1oZqwFTmLGry10Q2Udp2YiuB5fnr958qeQHyzcYUEAuY7xYqPuRCTm3C98veQfW0IibzWKj4+H7k4c81N8DaZQujzUKwbB8xQxWsuXb3DyvzK9jKB94kcvj67bSKaf2JT//G1k4NmCfAlS/v9rs09womSQuJ5CwAEiBZ7bJgMYaxN7d3FVR/MzBVB2MGw2F9UpoAExNLEX6cIGJqDcxBvpdX11MAmVc5xebJAjgEx5qSUvJKmrECbDcppibAjGeu0F0ZE/OrIARLBfHw+DQFWPNzrcROyUIrmHbTfRsyG7sJsIR/KmQBtjkKNn2hK0AbafOyWmgFh8SCdCTblAI4xUcSYCqRe5iqZSzwYoBj/dLcAfsi4ZTF+SC4KnTk6AsdwRR4jNEd3yYBVpuN1g/eUgDWcUkxu2AWRZ89ygJDfwxgCDBx7WbwLXY/+rKAtRb60FIADomEY4BICqh8BxYVw684CwMcfSxQi/QVq2DeieFvWpssYL/yYyBj/VIN+K1/yc1SvTJbxVpQCKZizwJrWVQDzvW/iPeuGvD/LiqfE+CfIpk9TfPUuwG8KBXAmVUAZ1YBnFkFcFY59xes07TWjEJ04gAAAABJRU5ErkJggg==" InformativeScreenshot="f0ce5d250c970bf95ffb0291da68688f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--数据采集' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetAttributeGeneric.Target>
+            </uix:NGetAttributeGeneric>
+            <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="388,96" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[idx]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARhSURBVHhe7ZpbiE1RGMdnCBGN+yWpSRJRiHjgETVqZB7OXhdnJnmYUqQ8SWjKgxSKEsrtRSiXKCQvrkWUzBgkaTy4lLuUphnG/5vznZl19lnnHGfvzdlzZv3qqzNrfevb3/rvfdb+1jpT4XA4HA6H479SX18/Xmp5UCj5EvZCKLG/rqFhDHeXN4lEYmhq0rLLZy3oG8xu5YunVNIy+W6TUtaxW/niSbnVNvmUiU3sVr7gCVD2ycsu9NWyW/lSU1MzBJNt8U8ed/9RY2PjIHYrb5LJ5CSp5I305PH5Ph6MCdzdPxBarE8L4Gm5l5v7D04AJ0A/EaCpqWmAEGJmQuv5pmHV35UWAJ/PetpbmraEUkswZjqHiB9UzqJqm6K1nprPMInlmGBb70SLNfXcW+0ttsU2DblUI6fhnN4/oxKFiofE7sJ+ZSYaC/sNewAx6ump45yjgTYpuBunfBeMrXlKXqytrR3G6YcHhcoJ24XibMj5DKcfDlqUsi+gWmHHhJSHY2GUi5KPs/IUooanERxc4FxmYLEfX4mB3B0nKiHETjNXfBXOc19wEOi9EfRdnA8t6Mbghr0y8n3PXcFBkM7egOo6N8cWPKEXevOVndwcHCMYTFzm5tgitDxt5szNwTGDOQGcAIUFoFMdpdQsLEhV3BQaKmqo5P2bt09kAqCkXIQdW4MZrJAAntYr4PeJ/X9i0dzAXYGh0haxvnHMD3QN7rLiF4DmgM3XQu7+O6SW2zKC9FhuAXB3JsInnWjafmMCC9ilaGhHiBgdmTHV93zHZ1kCsNFpNLsUBgO++gOkLLcA2NPvs40JU5LinX7EFhMi7GGXLHIJgNy/sEth7AHIcguAZO/Yx8g2dikaTBQlty2muskuWeQWoIj1wDY4ZXkEUKLZPkZ+Y5eiQSn71hKPrIVdsiilAGYF1mP4Cjxkl6LB2Nu2mLjWJXbJomQCYLGrs47RYiO7FA3GrssRU7JLFiUTAFTi4tcy/VVrmIMJ/hXpSWZMeTffiU8pBUidHOGOI4mT9CpdtWbNSO4KDF55Y3Hd3Yh5BTF3rFy7cgR3WSmpAHHACRCRAL7qK219WoAOdikMnP0LD1t4AbBOjKOzfv6zB7xFptAPJvxnYHILIJrZpTBIZh4G3cN7+KMvSCRPAB1b0yIJMSbDqmjDgtiP8HkouwTGIgBtzu5B3LnsUhyZwaIRAAJXI94bI/YPrPbLuDsUfgG4OThmsKgEIHC3R6NO2ICYmxPJxDRuDk2fEeBf4QRwAkQvQLsR8BY3xxa8Ya4a+bZzc3AQxPh9X32n9zh3xQ6t9Sjk+bknXy1fc1dwUAsc7RWge39/g/7NjbtjA27MRNyg62auQsrj3B0cIcRsBDN+Hus2KpWf0WFHHAy5PIX5c/yF3OfwNMKBqm2LL3gfMLGd048GKlgQOMcmKVaGJ6F78pWpzCME5eoMBD9AJz149GifQAtOHIzqfXwNxCH6ynK6DofD4XA48lFR8QdyN++Yg84/rAAAAABJRU5ErkJggg==" InformativeScreenshot="5379a3227d456934c6e5f59e0ea4f680.jpg" Selector="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" Title="店铺管理" Url="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780844956686#productImageInfo" />
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARhSURBVHhe7ZpbiE1RGMdnCBGN+yWpSRJRiHjgETVqZB7OXhdnJnmYUqQ8SWjKgxSKEsrtRSiXKCQvrkWUzBgkaTy4lLuUphnG/5vznZl19lnnHGfvzdlzZv3qqzNrfevb3/rvfdb+1jpT4XA4HA6H479SX18/Xmp5UCj5EvZCKLG/rqFhDHeXN4lEYmhq0rLLZy3oG8xu5YunVNIy+W6TUtaxW/niSbnVNvmUiU3sVr7gCVD2ycsu9NWyW/lSU1MzBJNt8U8ed/9RY2PjIHYrb5LJ5CSp5I305PH5Ph6MCdzdPxBarE8L4Gm5l5v7D04AJ0A/EaCpqWmAEGJmQuv5pmHV35UWAJ/PetpbmraEUkswZjqHiB9UzqJqm6K1nprPMInlmGBb70SLNfXcW+0ttsU2DblUI6fhnN4/oxKFiofE7sJ+ZSYaC/sNewAx6ump45yjgTYpuBunfBeMrXlKXqytrR3G6YcHhcoJ24XibMj5DKcfDlqUsi+gWmHHhJSHY2GUi5KPs/IUooanERxc4FxmYLEfX4mB3B0nKiHETjNXfBXOc19wEOi9EfRdnA8t6Mbghr0y8n3PXcFBkM7egOo6N8cWPKEXevOVndwcHCMYTFzm5tgitDxt5szNwTGDOQGcAIUFoFMdpdQsLEhV3BQaKmqo5P2bt09kAqCkXIQdW4MZrJAAntYr4PeJ/X9i0dzAXYGh0haxvnHMD3QN7rLiF4DmgM3XQu7+O6SW2zKC9FhuAXB3JsInnWjafmMCC9ilaGhHiBgdmTHV93zHZ1kCsNFpNLsUBgO++gOkLLcA2NPvs40JU5LinX7EFhMi7GGXLHIJgNy/sEth7AHIcguAZO/Yx8g2dikaTBQlty2muskuWeQWoIj1wDY4ZXkEUKLZPkZ+Y5eiQSn71hKPrIVdsiilAGYF1mP4Cjxkl6LB2Nu2mLjWJXbJomQCYLGrs47RYiO7FA3GrssRU7JLFiUTAFTi4tcy/VVrmIMJ/hXpSWZMeTffiU8pBUidHOGOI4mT9CpdtWbNSO4KDF55Y3Hd3Yh5BTF3rFy7cgR3WSmpAHHACRCRAL7qK219WoAOdikMnP0LD1t4AbBOjKOzfv6zB7xFptAPJvxnYHILIJrZpTBIZh4G3cN7+KMvSCRPAB1b0yIJMSbDqmjDgtiP8HkouwTGIgBtzu5B3LnsUhyZwaIRAAJXI94bI/YPrPbLuDsUfgG4OThmsKgEIHC3R6NO2ICYmxPJxDRuDk2fEeBf4QRwAkQvQLsR8BY3xxa8Ya4a+bZzc3AQxPh9X32n9zh3xQ6t9Sjk+bknXy1fc1dwUAsc7RWge39/g/7NjbtjA27MRNyg62auQsrj3B0cIcRsBDN+Hus2KpWf0WFHHAy5PIX5c/yF3OfwNMKBqm2LL3gfMLGd048GKlgQOMcmKVaGJ6F78pWpzCME5eoMBD9AJz149GifQAtOHIzqfXwNxCH6ynK6DofD4XA48lFR8QdyN++Yg84/rAAAAABJRU5ErkJggg==" InformativeScreenshot="10d3b8d0a47910360a2b9ccb09541ba8.jpg" Selector="&lt;html app='msedge.exe' title='店小秘--数据采集' /&gt;" Title="店小秘--数据采集" Url="https://www.dianxiaomi.com/crawl/index.htm" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
