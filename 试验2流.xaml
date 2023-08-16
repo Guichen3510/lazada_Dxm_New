@@ -62,12 +62,14 @@
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
@@ -113,7 +115,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ClickType="Single" DisplayName="单击 'edit'" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6f8316f0-3b08-45c2-bb2d-075b3e602ff0" Version="V1">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 'edit'" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6f8316f0-3b08-45c2-bb2d-075b3e602ff0" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780344928732#skuParameter" DesignTimeRectangle="569, 535, 15, 15" ElementType="Text" FriendlyName="'edit'" FullSelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl aaname='edit' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='skuParameterList' tag='TABLE' /&gt;&lt;webctrl aaname='edit' type='' tag='SPAN' class='wr-edit attach-icons md-15 btnEdit' check:innerText='edit' /&gt;" Guid="aad1b323-21d9-47ff-b2d4-adcd4294414f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC+SURBVDhP7ZNRCoJAEIbnboLgMULoHAadYymCwAd967F6EvQCvdgFXA/xu6OzpLZIK73VBwOzM/Axw7CEL/KXudFljsPpjMtDCiP8ZE2F1IhY5hJ+LOsnyipotCgyluVG1kp3gFQcIYiPqKXgwq7Whwh1I80RtFFPSd1MRBJpOZ3IsrjmuyhH4ZjIQldJ5viKGAp2d0lfrBExlIQRkpu8DGtFDNVqiyDcY1jXnt1fxMwOMJb5iRjv77TET8iADiMGYbwWfAyPAAAAAElFTkSuQmCC" InformativeScreenshot="1c86275c5153c544f4fa0c706444b6e1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>

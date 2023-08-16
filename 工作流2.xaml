@@ -61,6 +61,7 @@
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
@@ -68,6 +69,7 @@
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
@@ -127,7 +129,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ClickType="Single" DisplayName="单击 '引用产品'" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8df05bc2-4c58-46f1-a963-d9b18b201acd" Version="V1">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 '引用产品'" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8df05bc2-4c58-46f1-a963-d9b18b201acd" Version="V1">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=41589375186913866" DesignTimeRectangle="1063, 191, 96, 32" ElementType="Button" FriendlyName="'引用产品'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;引用产品 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;引用产品 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='BUTTON' type='button' class='button btn-orange' check:innerText='引用产品' /&gt;" Guid="3c6a208c-f40c-44a5-98a2-623127a2823b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAkCAYAAAB/up84AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ5SURBVGhD7Zhfb9MwEMDz5Zq3fh5AVDAYEuKT8ICQ+oB4RkLiiQ8wNCHQphUtdGUlWVNYx+Gz4upiX/Nnc1wj7qSf2trnxLmf7UhN1us1CPEgQiJjK+T64xuAF2OAw5EQElVzrL0jRGTsEVV7VwiXKARDhESGCIkMERIZIiQyREhkiJDI8CPkwzHwodpp3tGFyiW/d46zw7oOZfoeIFdwfVueq5zqUrui9Rph8COEBYvQQcjsFcnBMSpnSnIOVX+TEFNsel0HZi6UTlLD8G8JwfG9wtz/fxQyq2pQiw5COoVdzGpXHKnPWvuu3VTlN0WbkKl9L0JTX088CakeuHZsYFsHIXc5smY0F/PssQZmLpS2HWJ2Zm2uFWYhOovjdngS0lA0ig8hfY4tn8cQJ8WzDMSPEFxhbFjF5YR0CktInwJwczNFdY5Za742VMoAMhA/QliY1W4LcYrLjOF2SF8hdKfQXYlF3c6HuzeDkYLhWQYyoBCrkAgnhP7uIqRWxA74FoL0XRQ9GE6IPiqahHAFaBPSo2iGIYQMyHBC8MHtlyoVYhdK0yKEHdOCXhhW3PYdEgCPQrBwNJiHo0Kc4wohQrDfBLuiOyI7RLgLIiQyREhkiJDIECGR4Qj5oxqF/VGWpSYplQz8cvN05LARgnG1WmkSlLFalbrx+skIflf8EoLyMy80CVopiivdWB4oU49HUFTkj4RQzBeXmiRXMi6XORTPxrBUHYuJ6pyk8P1hCpkQhoMxnM4yTYIy0Ez27jWcq46zBymc3E/h670UvgjDMxnD8duX8OnziSa5+LGEb9lcSVnCZnOj/0KS2F8k2XwBp2fnIiOKAPgLBHZkajuSQicAAAAASUVORK5CYII=" InformativeScreenshot="bc904aac13d96756d6666666dfa9cda3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
                 </uix:NClick.Target>
