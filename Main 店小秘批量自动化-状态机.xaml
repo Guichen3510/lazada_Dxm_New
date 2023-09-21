@@ -470,15 +470,15 @@
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="1159,275" sap2010:WorkflowViewState.IdRef="CommentOut_43">
+                              <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="1159,275" sap2010:WorkflowViewState.IdRef="CommentOut_44">
                                 <ui:CommentOut.Body>
-                                  <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="512,196" sap2010:WorkflowViewState.IdRef="Sequence_374">
+                                  <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="512,196" sap2010:WorkflowViewState.IdRef="Sequence_376">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Sequence DisplayName="账号密码登入部分 序列" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_368">
+                                    <Sequence DisplayName="账号密码登入部分 序列" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_375">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1450,9 +1450,9 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <Transition.Condition>[State="SelectOk"]</Transition.Condition>
                                   <Transition.To>
-                                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="1.点击编辑、进入产品编辑页面&#xA;2.编辑分类" DisplayName="是否编辑分类-单击编辑" sap:VirtualizedContainerService.HintSize="865,7435" sap2010:WorkflowViewState.IdRef="State_11">
+                                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="1.点击编辑、进入产品编辑页面&#xA;2.编辑分类" DisplayName="是否编辑分类-单击编辑" sap:VirtualizedContainerService.HintSize="250,108" sap2010:WorkflowViewState.IdRef="State_11">
                                       <State.Entry>
-                                        <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="819,6991" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                        <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="819,6951" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1460,13 +1460,13 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <TryCatch.Try>
-                                            <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="781,6753" sap2010:WorkflowViewState.IdRef="Sequence_193">
+                                            <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="781,6713" sap2010:WorkflowViewState.IdRef="Sequence_193">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="使用浏览器 Edge: 店小秘--免费的跨境电商ERP" sap:VirtualizedContainerService.HintSize="719,732" sap2010:WorkflowViewState.IdRef="NApplicationCard_17" InteractionMode="DebuggerApi" ScopeGuid="0b4f5540-2a1e-4d51-b5a5-e00877d5e3cc" Version="V2" WindowResize="Maximize">
+                                              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="使用浏览器 Edge: 店小秘--免费的跨境电商ERP" sap:VirtualizedContainerService.HintSize="719,692" sap2010:WorkflowViewState.IdRef="NApplicationCard_17" InteractionMode="DebuggerApi" ScopeGuid="0b4f5540-2a1e-4d51-b5a5-e00877d5e3cc" Version="V2" WindowResize="Maximize">
                                                 <uix:NApplicationCard.Body>
                                                   <ActivityAction x:TypeArguments="x:Object">
                                                     <ActivityAction.Argument>
@@ -1593,7 +1593,7 @@
                                                             <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,718" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                                                               <ui:IfElseIf.ConditionBlocks>
                                                                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                                                  <ui:IfElseIfBlock BlockType="If" Condition="[Category.Contains(&quot;Shoes and Clothing&quot;)]">
+                                                                  <ui:IfElseIfBlock BlockType="If" Condition="[Category.Contains(&quot;ShoesandClothing&quot;)]">
                                                                     <ui:IfElseIfBlock.Then>
                                                                       <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="496,195" sap2010:WorkflowViewState.IdRef="Sequence_224">
                                                                         <sap:WorkflowViewStateService.ViewState>
@@ -1944,15 +1944,15 @@
                                           <Transition.To>
                                             <State x:Name="__ReferenceID13" sap2010:Annotation.AnnotationText="店铺名获取和类目获取" DisplayName="类目识别" sap:VirtualizedContainerService.HintSize="248,93" sap2010:WorkflowViewState.IdRef="State_18">
                                               <State.Entry>
-                                                <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="681,2598" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                                                <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="681,2792" sap2010:WorkflowViewState.IdRef="TryCatch_12">
                                                   <TryCatch.Try>
-                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="643,2360" sap2010:WorkflowViewState.IdRef="NApplicationCard_35" InteractionMode="DebuggerApi" ScopeGuid="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V2">
+                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="643,2554" sap2010:WorkflowViewState.IdRef="NApplicationCard_35" InteractionMode="DebuggerApi" ScopeGuid="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V2">
                                                       <uix:NApplicationCard.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
                                                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                           </ActivityAction.Argument>
-                                                          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="609,2101" sap2010:WorkflowViewState.IdRef="Sequence_275">
+                                                          <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="609,2335" sap2010:WorkflowViewState.IdRef="Sequence_275">
                                                             <Sequence.Variables>
                                                               <Variable x:TypeArguments="ui:UiElement" Name="url_mb" />
                                                               <Variable x:TypeArguments="x:String" Name="wenben1" />
@@ -2039,6 +2039,44 @@
                                                                 <InArgument x:TypeArguments="x:String">[Category.Replace(" ","")]</InArgument>
                                                               </Assign.Value>
                                                             </Assign>
+                                                            <ui:MultipleAssign DisplayName="多重分配" sap:VirtualizedContainerService.HintSize="547,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                                                              <ui:MultipleAssign.AssignOperations>
+                                                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_65">
+                                                                    <ui:AssignOperation.To>
+                                                                      <OutArgument x:TypeArguments="x:String">[Category]</OutArgument>
+                                                                    </ui:AssignOperation.To>
+                                                                    <ui:AssignOperation.Value>
+                                                                      <InArgument x:TypeArguments="x:String">[Category.Replace("&amp;","and")]</InArgument>
+                                                                    </ui:AssignOperation.Value>
+                                                                  </ui:AssignOperation>
+                                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_66">
+                                                                    <ui:AssignOperation.To>
+                                                                      <OutArgument x:TypeArguments="x:String">[Category]</OutArgument>
+                                                                    </ui:AssignOperation.To>
+                                                                    <ui:AssignOperation.Value>
+                                                                      <InArgument x:TypeArguments="x:String">[Category.Replace("'","")]</InArgument>
+                                                                    </ui:AssignOperation.Value>
+                                                                  </ui:AssignOperation>
+                                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_67">
+                                                                    <ui:AssignOperation.To>
+                                                                      <OutArgument x:TypeArguments="x:String">[Category]</OutArgument>
+                                                                    </ui:AssignOperation.To>
+                                                                    <ui:AssignOperation.Value>
+                                                                      <InArgument x:TypeArguments="x:String">[Category.Replace(" &gt; ","-")]</InArgument>
+                                                                    </ui:AssignOperation.Value>
+                                                                  </ui:AssignOperation>
+                                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_68">
+                                                                    <ui:AssignOperation.To>
+                                                                      <OutArgument x:TypeArguments="x:String">[Category]</OutArgument>
+                                                                    </ui:AssignOperation.To>
+                                                                    <ui:AssignOperation.Value>
+                                                                      <InArgument x:TypeArguments="x:String">[Category.Replace(",","")]</InArgument>
+                                                                    </ui:AssignOperation.Value>
+                                                                  </ui:AssignOperation>
+                                                                </scg:List>
+                                                              </ui:MultipleAssign.AssignOperations>
+                                                            </ui:MultipleAssign>
                                                             <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="547,147" sap2010:WorkflowViewState.IdRef="LogMessage_64" Level="Info" Message="[Category]" />
                                                             <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,718" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                                                               <ui:IfElseIf.ConditionBlocks>
@@ -2110,13 +2148,13 @@
                                                         <ActivityAction.Argument>
                                                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                         </ActivityAction.Argument>
-                                                        <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="496,331" sap2010:WorkflowViewState.IdRef="Sequence_293">
+                                                        <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="496,380" sap2010:WorkflowViewState.IdRef="Sequence_293">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="LogMessage_63" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[Exception]" />
+                                                          <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_63" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[Exception]" />
                                                           <Assign DisplayName="分配 State" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_161">
                                                             <Assign.To>
                                                               <OutArgument x:TypeArguments="x:String">[State]</OutArgument>
@@ -2152,17 +2190,17 @@
                                                   </sap:WorkflowViewStateService.ViewState>
                                                   <Transition.Condition>[State="SkipTemplete"]</Transition.Condition>
                                                   <Transition.To>
-                                                    <State x:Name="__ReferenceID7" sap2010:Annotation.AnnotationText="店铺名、短描述获取-URL获取-模板引用-颜色尺寸等属性是否存在" DisplayName="模板引用及属性识别" sap:VirtualizedContainerService.HintSize="248,108" sap2010:WorkflowViewState.IdRef="State_12">
+                                                    <State x:Name="__ReferenceID7" sap2010:Annotation.AnnotationText="店铺名、短描述获取-URL获取-模板引用-颜色尺寸等属性是否存在" DisplayName="模板引用及属性识别" sap:VirtualizedContainerService.HintSize="1314,7331" sap2010:WorkflowViewState.IdRef="State_12">
                                                       <State.Entry>
-                                                        <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="1268,6590" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                                                        <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="1268,6873" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                                                           <TryCatch.Try>
-                                                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="1230,6352" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V2">
+                                                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="1230,6635" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V2">
                                                               <uix:NApplicationCard.Body>
                                                                 <ActivityAction x:TypeArguments="x:Object">
                                                                   <ActivityAction.Argument>
                                                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                                   </ActivityAction.Argument>
-                                                                  <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="1196,6093" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                                                  <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="1196,6416" sap2010:WorkflowViewState.IdRef="Sequence_129">
                                                                     <Sequence.Variables>
                                                                       <Variable x:TypeArguments="ui:UiElement" Name="url_mb" />
                                                                       <Variable x:TypeArguments="x:String" Name="wenben1" />
@@ -2485,7 +2523,7 @@
                                                                     </ui:CommentOut>
                                                                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 '引用'" sap:VirtualizedContainerService.HintSize="1134,159" sap2010:WorkflowViewState.IdRef="NClick_119" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V3">
                                                                       <uix:NClick.Target>
-                                                                        <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637781000050600" CvTextArea="1213, 338, 28, 15" CvTextArgument="3IA" CvType="Text" DesignTimeRectangle="1215, 339, 26, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'引用'" FullSelectorArgument="&lt;webctrl parentid='productModulePageList' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='productModulePageList' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='引用' check:innerText='引用' /&gt;" Guid="455af2a9-f734-4cbf-ac5e-68d4263b5c8f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAATCAYAAACHrr18AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADZSURBVEhLY/g/QGAEWzxl78P/Tt2nMHDqgiv/P33/DVX1/3/Dxtv/T9//AOXh1oeO0c3B6+On73/8L199k6DFIAwDID0gS0A0DIDU5y27NsgsBgmCNBAKIqoHNciFMbMvohhKFx9jk8QGqG7x1kuvsAZR8NTzKIZQPaixAWyuR7cYFBUgR8MAyT7GBrBpQLcYnU8Vi0E+QQ8iZIuwWUIVi0HxBwpKZIBsMchh6PJkWQxS4DXhDDxBoCcsEEC2GD2YQQDZYpCjYGYhp3wQwOtjWoJRi+kE/v8HAFrkSWEFxNuhAAAAAElFTkSuQmCC" InformativeScreenshot="cd250243b2e7696dae1e85b69e44d7d3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="Selector, Image, CV" Version="V2" Visibility="Interactive" />
+                                                                        <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637781074587174" CvTextArea="1231, 530, 28, 15" CvTextArgument="3lP" CvType="Text" DesignTimeRectangle="1232, 349, 26, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'引用'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='productModulePageList' tag='TABLE' /&gt;&lt;webctrl tag='A' rowName='*{0}' /&gt;&quot;, Category)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentid='productModulePageList' tag='TABLE' /&gt;&lt;webctrl tag='A' rowName='*{0}' type='' class='' aaname='引用' check:text='引用' /&gt;&quot;, Category)]" Guid="57515770-33ea-4e80-a809-41096f03d3ce" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAATCAYAAACHrr18AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVEhLY/g/QGAEW/z0/Y//wVPP/3fqPoWBt156BVX1///p+x/+N2y8DeXh14eOkc0h6OMpex8StDh1wRUwDQMgPSCMDMpX3xyEFoMkCAURTYIa5EqQy5ABXXyMLokNUN3iT99/gw3AFkTIhtAkqLEBdNejWwzi5y27BnY4DJDkY1wAXQM2i5H5IECxxbDgx2cxNksothgUfzGzL4ItgwFki0EOAwUzsjwIkGUxSAFygkA3ANlidN/DAMxikLzXhDNgc0AJEDnlE4xjWoFRi+kE/v8HAMEDSOMHqeKZAAAAAElFTkSuQmCC" InformativeScreenshot="2f7db30c61d40f4a2400eb113d215644.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="Selector, Image, CV" Version="V2" Visibility="Interactive" />
                                                                       </uix:NClick.Target>
                                                                     </uix:NClick>
                                                                     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="单击 变种信息" sap:VirtualizedContainerService.HintSize="1134,107" sap2010:WorkflowViewState.IdRef="Click_88" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
@@ -2500,7 +2538,7 @@
                                                                         </ui:Target>
                                                                       </ui:Click.Target>
                                                                     </ui:Click>
-                                                                    <ui:IfElseIf sap2010:Annotation.AnnotationText="产品类目，则需要补充" DisplayName="Else If store1" sap:VirtualizedContainerService.HintSize="1134,1072" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
+                                                                    <ui:IfElseIf sap2010:Annotation.AnnotationText="产品类目，则需要补充" DisplayName="Else If store1" sap:VirtualizedContainerService.HintSize="1134,1395" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
                                                                       <ui:IfElseIf.ConditionBlocks>
                                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                           <ui:IfElseIfBlock BlockType="If" Condition="[Category.Contains(&quot;BagsandTravel&quot;)]">
@@ -2550,6 +2588,25 @@
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                                 <Assign DisplayName="分配Size_Exits" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_198">
+                                                                                  <Assign.To>
+                                                                                    <OutArgument x:TypeArguments="x:String">[Size_Exits]</OutArgument>
+                                                                                  </Assign.To>
+                                                                                  <Assign.Value>
+                                                                                    <InArgument x:TypeArguments="x:String">Size_ExitsError</InArgument>
+                                                                                  </Assign.Value>
+                                                                                </Assign>
+                                                                              </Sequence>
+                                                                            </ui:IfElseIfBlock.Then>
+                                                                          </ui:IfElseIfBlock>
+                                                                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Category.Contains(&quot;PencilCasesandBoxes&quot;)]">
+                                                                            <ui:IfElseIfBlock.Then>
+                                                                              <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="496,195" sap2010:WorkflowViewState.IdRef="Sequence_377">
+                                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                  </scg:Dictionary>
+                                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                                <Assign DisplayName="分配Size_Exits" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_204">
                                                                                   <Assign.To>
                                                                                     <OutArgument x:TypeArguments="x:String">[Size_Exits]</OutArgument>
                                                                                   </Assign.To>
@@ -4769,13 +4826,13 @@
                                                                                   <Transition.To>
                                                                                     <State x:Name="__ReferenceID11" DisplayName="保存产品" sap:VirtualizedContainerService.HintSize="270,93" sap2010:WorkflowViewState.IdRef="State_9">
                                                                                       <State.Entry>
-                                                                                        <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="1312,5115" sap2010:WorkflowViewState.IdRef="Sequence_96">
+                                                                                        <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="1312,4903" sap2010:WorkflowViewState.IdRef="Sequence_96">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                                          <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="1250,5004" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                                                                          <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="1250,4792" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4783,13 +4840,13 @@
                                                                                               </scg:Dictionary>
                                                                                             </sap:WorkflowViewStateService.ViewState>
                                                                                             <TryCatch.Try>
-                                                                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="1212,4766" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" ScopeGuid="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V2">
+                                                                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="使用浏览器 Edge: 店小秘--编辑Lazada产品" sap:VirtualizedContainerService.HintSize="1212,4554" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" ScopeGuid="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V2">
                                                                                                 <uix:NApplicationCard.Body>
                                                                                                   <ActivityAction x:TypeArguments="x:Object">
                                                                                                     <ActivityAction.Argument>
                                                                                                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                                                                     </ActivityAction.Argument>
-                                                                                                    <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="1178,4547" sap2010:WorkflowViewState.IdRef="Sequence_93">
+                                                                                                    <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="1178,4335" sap2010:WorkflowViewState.IdRef="Sequence_93">
                                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4800,7 +4857,7 @@
                                                                                                           <OutArgument x:TypeArguments="x:String">[title_2]</OutArgument>
                                                                                                         </ui:ReadCell.Result>
                                                                                                       </ui:ReadCell>
-                                                                                                      <If Condition="[Input_Eng=&quot;Input_Eng_OK&quot; or Translate=&quot;Translate_OK&quot;]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="1116,576" sap2010:WorkflowViewState.IdRef="If_50">
+                                                                                                      <If Condition="[Input_Eng=&quot;Input_Eng_OK&quot; or Translate=&quot;Translate_OK&quot;]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="1116,494" sap2010:WorkflowViewState.IdRef="If_50">
                                                                                                         <If.Then>
                                                                                                           <Sequence sap:VirtualizedContainerService.HintSize="376,310" sap2010:WorkflowViewState.IdRef="Sequence_191">
                                                                                                             <sap:WorkflowViewStateService.ViewState>
@@ -4995,7 +5052,7 @@
                                                                                                           </uix:TargetAnchorable>
                                                                                                         </uix:NClick.Target>
                                                                                                       </uix:NClick>
-                                                                                                      <uix:NCheckState DisplayName="查看您的产品已保存到「采集箱」" sap:VirtualizedContainerService.HintSize="1116,1102" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V1">
+                                                                                                      <uix:NCheckState DisplayName="查看您的产品已保存到「采集箱」" sap:VirtualizedContainerService.HintSize="1116,972" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="b2bba58b-14a5-454d-b1ab-3691f2359e45" Version="V1">
                                                                                                         <uix:NCheckState.IfExists>
                                                                                                           <Sequence DisplayName="查看您的产品已保存到「采集箱」-目标显示" sap:VirtualizedContainerService.HintSize="496,323" sap2010:WorkflowViewState.IdRef="Sequence_94">
                                                                                                             <sap:WorkflowViewStateService.ViewState>
@@ -5015,7 +5072,7 @@
                                                                                                           </Sequence>
                                                                                                         </uix:NCheckState.IfExists>
                                                                                                         <uix:NCheckState.IfNotExists>
-                                                                                                          <Sequence DisplayName="查看您的产品已保存到「采集箱」-目标未显示" sap:VirtualizedContainerService.HintSize="566,881" sap2010:WorkflowViewState.IdRef="Sequence_95">
+                                                                                                          <Sequence DisplayName="查看您的产品已保存到「采集箱」-目标未显示" sap:VirtualizedContainerService.HintSize="566,751" sap2010:WorkflowViewState.IdRef="Sequence_95">
                                                                                                             <Sequence.Variables>
                                                                                                               <Variable x:TypeArguments="x:String" Name="ProductSave" />
                                                                                                             </Sequence.Variables>
@@ -5029,7 +5086,7 @@
                                                                                                                 <OutArgument x:TypeArguments="x:String">[ProductSave]</OutArgument>
                                                                                                               </ui:InputDialog.Result>
                                                                                                             </ui:InputDialog>
-                                                                                                            <Switch x:TypeArguments="x:String" DisplayName="切换" Expression="[ProductSave]" sap:VirtualizedContainerService.HintSize="504,300" sap2010:WorkflowViewState.IdRef="Switch`1_12">
+                                                                                                            <Switch x:TypeArguments="x:String" DisplayName="切换" Expression="[ProductSave]" sap:VirtualizedContainerService.HintSize="504,170" sap2010:WorkflowViewState.IdRef="Switch`1_12">
                                                                                                               <Assign x:Key="检查完成并保存" DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_51">
                                                                                                                 <Assign.To>
                                                                                                                   <OutArgument x:TypeArguments="x:String">[State]</OutArgument>
@@ -5051,7 +5108,7 @@
                                                                                                           </Sequence>
                                                                                                         </uix:NCheckState.IfNotExists>
                                                                                                         <uix:NCheckState.Target>
-                                                                                                          <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637780261191712#productInfo" DesignTimeRectangle="660, 255, 570, 19" ElementType="Text" FriendlyName="'您的产品已保存到「采集箱」，请在采集箱页完成发…'" FullSelectorArgument="&lt;webctrl id='msgText' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='msgText' tag='P' type='' class='' aaname='您的产品已保存到「采集箱」，请在采集箱页完成发布！' check:innerText='您的产品已保存到「采集箱」，请在采集箱页完成发布！' /&gt;" Guid="70754ac9-605c-4267-92b2-fd93d7f39a9b" ImageBase64="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" InformativeScreenshot="d008418816779677d9dc95893ebcbfb6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                                                                                                          <uix:TargetAnchorable BrowserURL="https://www.dianxiaomi.com/lazadaProduct/edit.htm?id=22637781074587152#productPackInfo" CvTextArea="719, 172, 111, 17" CvTextArgument="¿ [ttn7*BJ" CvType="Text" DesignTimeRectangle="656, 173, 570, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'操作成功，请到「待发布产品」中查看！'" FullSelectorArgument="&lt;webctrl id='msgText' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='msgText' tag='P' type='' class='' aaname='操作成功，请到「待发布产品」中查看！' check:innerText='操作成功，请到「待发布产品」中查看！' /&gt;" Guid="911b4204-a0ae-4e39-84e3-6c8ab4809514" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAj4AAAAXCAYAAAALDkV7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAcTSURBVHhe7Z07i2RVFIX9b4JgIAgGyqCB4iMRMRHBSMRExGh8ROoYiQYqaugzUdMe05l4Jh/zkq/oVazavc+pe6u7h4FaHxzqntd+3dtnb2/V4GObEEIIIYQTIYVPCCGEEE6GFD4hhBBCOBkemcLn7Oz25q2339ncuXt389yNFza//Prb+UwIIYQQwtWwK3wePPhvW3hQgACFx+NPPHmhvfve+9t55/Mvb20bsK9bc4hd4XPn7ube/ft7tow4VtcIfOgKrhobB/1dnGgua6mt6Hjq6Wd2MhRX0clZajdr/D6h57pizJ7OJod5j1fXOhn4hXyek2MYxWsGe+q9cJb4QlsS8xBCCNfHtPCpCa8bq0nogw8/mh7srOONTpcUaiNJfPf9D3uFAI39yOnsuQyKwV9//7N5/Y0393TWJhsEdtTEyDxy1thK7LABWyr1HolRIq+yavJmHPtGCV3znexDsIe9nR+CNSPdQLw63cj0Z24to3iBfO7uedfqc+Ac+luAy8Q4hBDCeraFD4ezFxdKOH7A+5zDXg54XdcixRsyvRhw6CN7lCjZW3V3Y5fF/RHY1BUcgnEVGG6T+7rUVpdVYT9JW8myizFNeljrhcVVFqU07vXvf/y5ag9NNhETt6+CH6yp4D9z9RlaCjo7uSNY/+LLr27vy9fffHs+ug/yOl+75rp1L9fYE0II4XiGb3yWQlJQ8lKioin5VrwYcOizRwmfa0+KLpPxLqHQRnrXgr5Ovpr0YPdLr7y2Fzfm2O++zmLijAoffEZWHQfmkF9BX2f7qLmMYxIya7s3INjn91KwvrPDW6cf2/Ct6umYPSu1VV2KgexXG90HwdzSv6Vj4hxCCOF42sLHExL/VV+/+vGkT6IjGbBHCYHrUZLXHsmisY8fNfPJPK0WE51MJSLB9UjvIdxnrp1ZIvN93vDx7Pa/O59mMXG6wodr9iKn81Hxn4Hc+iZrhsfW9R+i6pndE2yWjg72dX6tscf9EPSr3DqGfJ593XOXwxhz6mPH2rde0oUvPCOdnyGEEK6evcKHA5hDmUNfhzpJjMJHicYTG2tYz6d/jcIh7oc8DdnoQIaKAa1V3wsv9DndGHplJ9T+MaDj5sefTr+yU5slK3zFF/nW2d/Bnlr4CMXqx59+bu1R84QtiEu3lqZ7I9h7yH9/s8PnmsQ/i9sSsFXP4yG6Z4J+tUFj8h35ne211Vgjo+oTzNVnAF+I/2VjEkIIYRl7v/HRIc4h7Ad798aHpMMYBU896LsDXrCPOSVa1irxqsjq3q50Mul7wsCOUdJZimRiT2fHaByqPYoRn539HcjtCh/2EvuZf1W/UMyJL9cO4y4TvdjsCZ0x1mmv+9X1lyB/1KSPxrXPsdap9szongn6NU51jOu6z6nrFTe3u2udL+zr7lsIIYSr5+BvfEbj9PmhJwmgJggO8XrAC/Z5Yve1yOmSA1SZnV2dLWtBB7qUkGrionlRwPrRGuSoIJjFxKnxAY3xJgr/kNXp9MYaobggx3+cS5+vFL2AwEb0eGyxhXGt49MLndpfguIMfi/lq/zv4lbtmYHfXXy65jFbE2NsfvbG89tPxbpj5IvHOoQQwvVyofBZ8k+5PfF3B313wIs6x171mfOvUFw2c9KPfXzdw6cSJHS2rAVb0DVKSLNEpb3CC4Lq9wjkeuJ33D9k1jVVP7gNIBn0ibWvl27m3Ef0IFsyqsyZzSPcVo9pldXFrdozw2Mm6Nc41TGu6z6nkwGM+99KbdWXEEIID5eDb3z4eoR/yuuJzuGgrwmChFAPfBU0NWGQCBhjTr8T0TxzX9z6avfVh8axUW9UHMkS+ITddd0MZPBWhFjwNsR9UPPCz2HvSBfjzB+iJn7HY806vWUQnf5uDBn4MbK1Pgu10ODTn4elvjlul+ur/neyqz1rwf+R74L5et9r62T4Pap0vui5H+0JIYRwtQwLHx38vFlhnH53QHcHfXfAgydM5pFPEaG3TMhhr9a4PWKUKLC/FjnsrV/lHAK7ZFOnv8bJkU9dYhzFpIJc5CvxOzXW+HXzk8/OexeLHNa6TtnHp+LY2VR9pM86CkL5RqxlI3OudwmyRU3FJI1rn6s2yp4199XRc3YdINttr636MnqeQwghXA/bwockwKHMAcw1iUcHdE2COtiVOOjXQ5u5esADMniD5CBfRY+QPZ5cQUlRupU0lFTq+pEdI5CHDD6r356Q0ak1rJf+ThdjmpfdM9CztPABxYomu0By9P8+G+nXfhUeHdiCH5LtzOydgTzZ47Gu8lhT4zqzZwnEsIsFoL8WXrNW49bdI9H5EkII4eGye+MTHg2OLSROAYoGFRxe5IUQQghLSeETQgghhJMhhU8IIYQQToYUPiGEEEI4GVL4hBBCCOFkSOETQgghhJMhhU8IIYQQToTN5n+0GXp1gCE95QAAAABJRU5ErkJggg==" InformativeScreenshot="50ff33ea93a6ed148b2a26c2aedbf62a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='店小秘--编辑Lazada产品' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                                                                                                         </uix:NCheckState.Target>
                                                                                                       </uix:NCheckState>
                                                                                                     </Sequence>
@@ -5080,7 +5137,7 @@
                                                                                                   <ActivityAction.Argument>
                                                                                                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                                                                   </ActivityAction.Argument>
-                                                                                                  <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="496,331" sap2010:WorkflowViewState.IdRef="Sequence_98">
+                                                                                                  <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="496,380" sap2010:WorkflowViewState.IdRef="Sequence_98">
                                                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
