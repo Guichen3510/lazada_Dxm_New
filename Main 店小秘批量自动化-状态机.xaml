@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="店小秘批量自动化_状态机" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1244,2488" sap2010:WorkflowViewState.IdRef="店小秘批量自动化_状态机_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="店小秘批量自动化_状态机" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1235,2488" sap2010:WorkflowViewState.IdRef="店小秘批量自动化_状态机_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="90">
       <x:String>System.Activities</x:String>
@@ -445,7 +445,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID0" DisplayName="登入店小秘" sap:VirtualizedContainerService.HintSize="243,98" sap2010:WorkflowViewState.IdRef="State_2">
+            <State x:Name="__ReferenceID0" DisplayName="登入店小秘" sap:VirtualizedContainerService.HintSize="1401,2758" sap2010:WorkflowViewState.IdRef="State_2">
               <State.Entry>
                 <Sequence DisplayName="序列" sap:VirtualizedContainerService.HintSize="1355,2331" sap2010:WorkflowViewState.IdRef="Sequence_19">
                   <sap:WorkflowViewStateService.ViewState>
@@ -471,15 +471,15 @@
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="1159,275" sap2010:WorkflowViewState.IdRef="CommentOut_66">
+                              <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="1159,275" sap2010:WorkflowViewState.IdRef="CommentOut_68">
                                 <ui:CommentOut.Body>
-                                  <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="512,196" sap2010:WorkflowViewState.IdRef="Sequence_454">
+                                  <Sequence DisplayName="已忽略的活动" sap:VirtualizedContainerService.HintSize="512,196" sap2010:WorkflowViewState.IdRef="Sequence_461">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Sequence DisplayName="账号密码登入部分 序列" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_453">
+                                    <Sequence DisplayName="账号密码登入部分 序列" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_460">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3091,7 +3091,7 @@
                                                           </sap:WorkflowViewStateService.ViewState>
                                                           <Transition.Condition>[State="AttributeRecognized"]</Transition.Condition>
                                                           <Transition.To>
-                                                            <State x:Name="__ReferenceID10" sap2010:Annotation.AnnotationText="颜色、尺码等文本修正-Sku填写-详情页图片删除-标题识别及处理" DisplayName="属性修正-详情页处理" sap:VirtualizedContainerService.HintSize="1134,7550" sap2010:WorkflowViewState.IdRef="State_13">
+                                                            <State x:Name="__ReferenceID10" sap2010:Annotation.AnnotationText="颜色、尺码等文本修正-Sku填写-详情页图片删除-标题识别及处理" DisplayName="属性修正-详情页处理" sap:VirtualizedContainerService.HintSize="260,108" sap2010:WorkflowViewState.IdRef="State_13">
                                                               <State.Entry>
                                                                 <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="1088,7121" sap2010:WorkflowViewState.IdRef="TryCatch_8">
                                                                   <TryCatch.Try>
@@ -3796,7 +3796,7 @@
                                                                                       <OutArgument x:TypeArguments="x:String">[B]</OutArgument>
                                                                                     </ui:AssignOperation.To>
                                                                                     <ui:AssignOperation.Value>
-                                                                                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(title, "(迪士尼|2021|2020|批发|促销|特价|爆款|直销|电商|供货|厂家|亚马逊|速卖通|Ebay|跨境|外贸|一件|代发|工厂|现货|潮流|潮|地摊|货源|淘宝|2022|广州|义乌|零售|直供|实拍|依恋|直供|)", "")]</InArgument>
+                                                                                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(title, "(迪士尼|2021|2020|批发|促销|特价|爆款|直销|电商|供货|厂家|亚马逊|速卖通|Ebay|跨境|外贸|一件|代发|工厂|现货|潮流|潮|地摊|货源|淘宝|2022|广州|义乌|零售|直供|实拍|依恋|直供|【|】|抢先版|)", "")]</InArgument>
                                                                                     </ui:AssignOperation.Value>
                                                                                   </ui:AssignOperation>
                                                                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_50">
