@@ -2,7 +2,7 @@
   "name": "Edge-店小秘批量自动_Windows",
   "projectId": "d95c63ea-ea5b-46d5-9c18-5c23c62fed15",
   "description": "本流程已经优化至新视觉设计版本：\r\n注意：1.标题需要翻译时需启用使用Edge:有道翻译，其他用途期间需要禁用；\r\n2.不需要写入英文标题时需要禁用“输入英文标题”，否则启用。",
-  "main": "Main 店小秘批量自动化-状态机.xaml",
+  "main": "Main 马帮批量自动化-状态机.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.2]",
     "UiPath.Mail.Activities": "[1.20.3]",
@@ -81,8 +81,14 @@
       "output": []
     },
     {
-      "filePath": "Main 店小秘批量自动化-状态机.xaml",
-      "uniqueId": "1476aca5-b794-4a69-a1cc-d910e7b7ce22",
+      "filePath": "Main 店小秘批量自动化-状态机-1.xaml",
+      "uniqueId": "fdf49dab-8d63-4301-9a80-1eaaddae7161",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Main 马帮批量自动化-状态机.xaml",
+      "uniqueId": "5ae23ece-db29-4eb6-b8d8-39fa89a47b2c",
       "input": [],
       "output": []
     }
